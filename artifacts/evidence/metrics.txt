@@ -1,0 +1,14 @@
+## métricas
+apk_bytes=15510077
+dex_bytes=5911836
+apktool_files=7043
+jadx_files=4065
+own_java_files=172
+layouts=356
+native_so_files=16
+exported_activities=14
+permissions=15
+activities=25
+providers=3
+services=1
+receivers=1

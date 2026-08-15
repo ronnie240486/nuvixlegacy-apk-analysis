@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/main" android:background="@drawable/d" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <com.legacy.prime.Bacground.BackgroundView android:id="@id/backgroundImageView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <LinearLayout android:orientation="vertical" android:id="@id/Progressbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.legacy.prime.Bacground.LogoView android:layout_gravity="center" android:id="@id/CampLogo" android:layout_width="@dimen/_60sdp" android:layout_height="@dimen/_60sdp" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_centerVertical="true" android:contentDescription="@string/todo" />
+        <TextView android:textSize="@dimen/_7sdp" android:textColor="#ffcccccc" android:gravity="center" android:layout_gravity="center" android:id="@id/idmac1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:text="@string/app_name" android:layout_alignParentBottom="true" />
+        <TextView android:textSize="@dimen/_6sdp" android:textColor="#ffcccccc" android:gravity="center" android:layout_gravity="center" android:id="@id/txt_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp" android:layout_alignParentBottom="true" />
+        <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@id/lottieLoader" android:layout_width="@dimen/_30sdp" android:layout_height="@dimen/_30sdp" android:layout_marginTop="@dimen/_10sdp" android:layout_centerInParent="true" card_view:lottie_autoPlay="true" card_view:lottie_loop="true" card_view:lottie_rawRes="@raw/myload" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/_9sdp" android:textColor="#ffd3d3d3" android:id="@id/sem_internet" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_50sdp" android:text="Ler Qrcode" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:layout_marginStart="@dimen/_3sdp" />
+</RelativeLayout>

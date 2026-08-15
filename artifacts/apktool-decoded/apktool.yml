@@ -1,0 +1,50 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: NUVIXLEGACY.apk
+compressionType: false
+doNotCompress:
+- resources.arsc
+- assets/dexopt/baseline.prof
+- assets/dexopt/baseline.profm
+- lib/arm64-v8a/libandroidx.graphics.path.so
+- lib/arm64-v8a/libapi_esportes.so
+- lib/arm64-v8a/libc++_shared.so
+- lib/arm64-v8a/libnative.so
+- lib/armeabi-v7a/libandroidx.graphics.path.so
+- lib/armeabi-v7a/libapi_esportes.so
+- lib/armeabi-v7a/libc++_shared.so
+- lib/armeabi-v7a/libnative.so
+- lib/x86/libandroidx.graphics.path.so
+- lib/x86/libapi_esportes.so
+- lib/x86/libc++_shared.so
+- lib/x86/libnative.so
+- lib/x86_64/libandroidx.graphics.path.so
+- lib/x86_64/libapi_esportes.so
+- lib/x86_64/libc++_shared.so
+- lib/x86_64/libnative.so
+- png
+- webp
+- jpg
+- ogg
+- mp3
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '23'
+  targetSdkVersion: '34'
+sharedLibrary: false
+sparseResources: false
+unknownFiles:
+  DebugProbesKt.bin: '8'
+  androidsupportmultidexversion.txt: '8'
+  okhttp3/internal/publicsuffix/NOTICE: '8'
+  okhttp3/internal/publicsuffix/publicsuffixes.gz: '8'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.7.0-dirty
+versionInfo:
+  versionCode: '9'
+  versionName: '2.5'

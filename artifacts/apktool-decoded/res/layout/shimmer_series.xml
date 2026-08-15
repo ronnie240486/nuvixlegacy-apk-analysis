@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/_15sdp" android:paddingEnd="@dimen/_15sdp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.core.widget.NestedScrollView android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/_10sdp" android:paddingBottom="@dimen/_10sdp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="@dimen/_10sdp" android:layout_weight="0.3">
+                <include android:padding="@dimen/_5sdp" android:layout_width="@dimen/_33sdp" android:layout_height="@dimen/_33sdp" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/_10sdp" android:layout_alignParentStart="true" layout="@layout/row_shimmer_effects" />
+                <include android:layout_width="@dimen/_70sdp" android:layout_height="@dimen/_30sdp" android:layout_centerVertical="true" android:layout_alignParentEnd="true" layout="@layout/row_shimmer_effects" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false" android:layout_marginStart="@dimen/_10ssp" android:layout_marginEnd="@dimen/_10ssp">
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:baselineAligned="false" android:layout_weight="0.8">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="5.0">
+                        <include android:layout_width="fill_parent" android:layout_height="@dimen/_150sdp" layout="@layout/row_shimmer_effects" />
+                    </RelativeLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:layout_marginStart="@dimen/_15sdp" android:layout_marginEnd="@dimen/_15sdp">
+                        <ImageView android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_star_border" android:layout_weight="1.0" android:contentDescription="@string/todo" />
+                        <ImageView android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_star_border" android:layout_weight="1.0" android:contentDescription="@string/todo" />
+                        <ImageView android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_star_border" android:layout_weight="1.0" android:contentDescription="@string/todo" />
+                        <ImageView android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_star_border" android:layout_weight="1.0" android:contentDescription="@string/todo" />
+                        <ImageView android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_star_border" android:layout_weight="1.0" android:contentDescription="@string/todo" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0" android:layout_marginStart="@dimen/_15sdp">
+                    <LinearLayout android:orientation="horizontal" android:padding="@dimen/_10sdp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:layout_marginEnd="@dimen/_15sdp">
+                        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.9">
+                            <include android:layout_width="@dimen/_55sdp" android:layout_height="@dimen/_12sdp" android:layout_marginTop="@dimen/_1sdp" android:layout_marginBottom="@dimen/_10ssp" layout="@layout/row_shimmer_effects" />
+                            <include android:layout_width="@dimen/_61sdp" android:layout_height="@dimen/_13sdp" android:layout_marginTop="@dimen/_1sdp" android:layout_marginBottom="@dimen/_10ssp" layout="@layout/row_shimmer_effects" />
+                            <include android:layout_width="@dimen/_41sdp" android:layout_height="@dimen/_13sdp" android:layout_marginTop="@dimen/_1sdp" android:layout_marginBottom="@dimen/_10ssp" layout="@layout/row_shimmer_effects" />
+                            <include android:layout_width="@dimen/_31sdp" android:layout_height="@dimen/_13sdp" android:layout_marginTop="@dimen/_1sdp" layout="@layout/row_shimmer_effects" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.0">
+                            <include android:layout_width="@dimen/_35sdp" android:layout_height="@dimen/_12sdp" android:layout_marginTop="@dimen/_1sdp" android:layout_marginBottom="@dimen/_10ssp" layout="@layout/row_shimmer_effects" />
+                            <include android:layout_width="@dimen/_50sdp" android:layout_height="@dimen/_13sdp" android:layout_marginTop="@dimen/_1sdp" android:layout_marginBottom="@dimen/_10ssp" layout="@layout/row_shimmer_effects" />
+                            <include android:layout_width="@dimen/_35sdp" android:layout_height="@dimen/_13sdp" android:layout_marginTop="@dimen/_1sdp" android:layout_marginBottom="@dimen/_10ssp" layout="@layout/row_shimmer_effects" />
+                            <include android:layout_width="@dimen/_55sdp" android:layout_height="@dimen/_13sdp" android:layout_marginTop="@dimen/_1sdp" layout="@layout/row_shimmer_effects" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <include android:layout_width="@dimen/_84sdp" android:layout_height="@dimen/_26sdp" android:layout_marginTop="@dimen/_10sdp" android:paddingStart="@dimen/_5sdp" android:paddingEnd="@dimen/_6sdp" android:layout_marginStart="@dimen/_10sdp" layout="@layout/row_shimmer_effects" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_3sdp" android:layout_marginBottom="@dimen/_5sdp" android:layout_marginStart="@dimen/_10ssp" android:layout_marginEnd="@dimen/_10ssp">
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <include android:layout_width="@dimen/_90sdp" android:layout_height="@dimen/_26sdp" android:layout_marginTop="@dimen/_10sdp" android:paddingStart="@dimen/_5sdp" android:paddingEnd="@dimen/_6sdp" android:layout_marginEnd="@dimen/_10sdp" layout="@layout/row_shimmer_effects" />
+                    <include android:layout_width="@dimen/_90sdp" android:layout_height="@dimen/_26sdp" android:layout_marginTop="@dimen/_10sdp" android:paddingStart="@dimen/_5sdp" android:paddingEnd="@dimen/_6sdp" android:layout_marginEnd="@dimen/_10sdp" layout="@layout/row_shimmer_effects" />
+                    <include android:layout_width="@dimen/_90sdp" android:layout_height="@dimen/_26sdp" android:layout_marginTop="@dimen/_10sdp" android:paddingStart="@dimen/_5sdp" android:paddingEnd="@dimen/_6sdp" android:layout_marginEnd="@dimen/_10sdp" layout="@layout/row_shimmer_effects" />
+                </LinearLayout>
+                <include android:layout_width="fill_parent" android:layout_height="@dimen/_80sdp" android:layout_marginTop="@dimen/_5sdp" android:paddingStart="@dimen/_5sdp" android:paddingEnd="@dimen/_6sdp" layout="@layout/row_shimmer_effects" />
+                <include android:layout_width="fill_parent" android:layout_height="@dimen/_80sdp" android:layout_marginTop="@dimen/_5sdp" android:paddingStart="@dimen/_5sdp" android:paddingEnd="@dimen/_6sdp" layout="@layout/row_shimmer_effects" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

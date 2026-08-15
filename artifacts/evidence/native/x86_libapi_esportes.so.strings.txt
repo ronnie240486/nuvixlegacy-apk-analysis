@@ -1,0 +1,150 @@
+Android
+r29-beta4
+14033849
+__cxa_finalize
+__cxa_atexit
+__register_atfork
+_Z13base64_decodeRKNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE
+_Znwj
+memset
+_ZNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE9push_backEc
+_ZdlPvj
+Java_com_diegodev_apidesportes_jogos_callback_na_ae
+_ZNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6appendEPKcj
+__stack_chk_fail
+memmove
+Java_com_diegodev_apidesportes_jogos_callback_na_verificarUrlNativa
+strlen
+memchr
+memcmp
+__cxa_allocate_exception
+_ZNSt12length_errorD1Ev
+_ZTISt12length_error
+__cxa_throw
+__cxa_free_exception
+_ZNSt11logic_errorC2EPKc
+_ZTVSt12length_error
+__gxx_personality_v0
+fprintf
+fflush
+abort
+pthread_rwlock_wrlock
+pthread_rwlock_unlock
+malloc
+memcpy
+dl_iterate_phdr
+pthread_rwlock_rdlock
+fwrite
+libdl.so
+libc.so
+liblog.so
+libc++_shared.so
+libm.so
+libapi_esportes.so
+getFloatRegister
+libunwind: %s - %s
+DW_EH_PE_funcrel pointer encoding not supported
+libunwind: malformed DW_CFA_def_cfa DWARF unwind, reg too big
+CIE version is not 1 or 3
+_Unwind_Resume() can't return
+libunwind: malformed DW_CFA_def_cfa_sf DWARF unwind, reg too big
+Can't binary search on variable length encoded data.
+unsupported x86 register
+getULEB128
+libunwind: unsupported .eh_frame_hdr at %llx: need at least 4 bytes of data but only got %zd
+no x86 float registers
+libunwind: malformed DW_CFA_offset_extended DWARF unwind, reg too big
+FDE has zero length
+b7d01a5c12e1d91039181
+truncated uleb128 expression
+libunwind: unsupported .eh_frame_hdr version: %u at %llx
+39a3435cfc1a1fddb
+unsupported restore location for register
+getTableEntrySize
+truncated sleb128 expression
+DW_OP_piece not implemented
+f7d590a9520708141
+evaluateExpression
+unwind_phase2
+malformed uleb128 expression
+libunwind: malformed DW_CFA_register DWARF unwind, reg2 too big
+DW_EH_PE_aligned pointer encoding not supported
+getSavedRegister
+getRegister
+FDE is really a CIE
+9e884a703d17d3bd
+setFloatRegister
+libunwind: malformed DW_CFA_expression DWARF unwind, reg too big
+libunwind: malformed DW_CFA_offset_extended_sf DWARF unwind, reg too big
+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
+unknown pointer encoding
+getSLEB128
+DW_OP_deref_size with bad size
+during phase1 personality function said it would stop here, but now in phase2 it did not stop here
+setRegister
+libunwind: malformed DW_CFA_restore_extended DWARF unwind, reg too big
+DW_EH_PE_textrel pointer encoding not supported
+DWARF opcode not implemented
+libunwind: malformed DW_CFA_val_expression DWARF unwind, reg too big
+6cd99951bdff26e534238a909
+libunwind: malformed DW_CFA_offset DWARF unwind, reg (%llu) out of range
+unknown register
+DW_EH_PE_datarel is invalid with a datarelBase of 0
+Unknown DWARF encoding for search table.
+basic_string
+libunwind: malformed DW_CFA_GNU_negative_offset_extended DWARF unwind, reg too big
+libunwind: malformed DW_CFA_register DWARF unwind, reg too big
+libunwind: malformed DW_CFA_def_cfa_register DWARF unwind, reg too big
+_Unwind_Resume
+libunwind: malformed DW_CFA_undefined DWARF unwind, reg too big
+CIE ID is not zero
+CIE start does not match
+libunwind: malformed DW_CFA_val_offset_sf DWARF unwind, reg too big
+libunwind: malformed DW_CFA_restore DWARF unwind, reg (%llu) out of range
+getEncodedP
+DW_OP_fbreg not implemented
+libunwind: malformed DW_CFA_same_value DWARF unwind, reg too big
+libunwind: malformed DW_CFA_val_offset DWARF unwind, reg (%llu) out of range
+L$ F9
+;D$|u(
+D$aYXBpf
+D$eLn
+D$UNwb3
+D$MJyYX
+D$IJ0c2
+D$=BpLm
+D$ANvbQf
+D$E==
+t$(PQV
+D$8PV
+,^_[]
+,^_[]
+,^_[]
+su;8u
+,^_[]
+,^_[]
+Android (13989888, +pgo, +bolt, +lto, +mlgo, based on r563880c) clang version 21.0.0 (https://android.googlesource.com/toolchain/llvm-project 5e96669f06077099aa41290cdb4c5e6fa0f59349)
+Android (13989888, based on r563880c) clang version 21.0.0 (https://android.googlesource.com/toolchain/llvm-project 5e96669f06077099aa41290cdb4c5e6fa0f59349)
+Linker: LLD 21.0.0 (/mnt/disks/build-disk/src/googleplex-android/llvm-r563880-release/out/llvm-project/llvm 5e96669f06077099aa41290cdb4c5e6fa0f59349)
+.fini_array
+.text
+.comment
+.note.android.ident
+.got.plt
+.rel.plt
+.dynstr
+.eh_frame_hdr
+.gnu.version_r
+.data.rel.ro
+.rel.dyn
+.gnu.version
+.dynsym
+.gnu.hash
+.relro_padding
+.eh_frame
+.gcc_except_table
+.note.gnu.build-id
+.dynamic
+.shstrtab
+.rodata
+.data

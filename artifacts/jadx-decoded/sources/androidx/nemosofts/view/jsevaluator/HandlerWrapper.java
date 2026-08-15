@@ -1,0 +1,17 @@
+package androidx.nemosofts.view.jsevaluator;
+
+import android.os.Handler;
+import androidx.nemosofts.view.jsevaluator.interfaces.HandlerWrapperInterface;
+import p193g.InterfaceC2400a;
+
+/* JADX INFO: compiled from: r8-map-id-3b0fe1fe3be310c6d55756f0e4e73dab92065bed65670a23f41d484dc89ae294 */
+/* JADX INFO: loaded from: classes.dex */
+@InterfaceC2400a
+public class HandlerWrapper implements HandlerWrapperInterface {
+    private final Handler mHandler = new Handler();
+
+    @Override // androidx.nemosofts.view.jsevaluator.interfaces.HandlerWrapperInterface
+    public void post(Runnable runnable) {
+        this.mHandler.post(runnable);
+    }
+}

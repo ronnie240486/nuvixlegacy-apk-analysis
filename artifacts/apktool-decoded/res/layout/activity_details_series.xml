@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/theme_bg" android:background="@color/bg_home_atv" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.legacy.prime.Bacground.BackgroundView android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_page" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/_15sdp" android:paddingEnd="@dimen/_15sdp">
+        <androidx.core.widget.NestedScrollView android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/_30sdp" android:paddingBottom="@dimen/_10sdp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false" android:layout_marginStart="@dimen/_10ssp" android:layout_marginEnd="@dimen/_10ssp">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:id="@id/iv_series" android:layout_width="@dimen/_70sdp" android:layout_height="@dimen/_110sdp" android:src="@color/bg_color_load" android:scaleType="centerCrop" android:contentDescription="@string/todo" app:hv_corner_radius="@dimen/_3sdp" />
+                        <LinearLayout android:orientation="horizontal" android:layout_width="@dimen/_70sdp" android:layout_height="@dimen/_15sdp">
+                            <ImageView android:id="@id/iv_star_1" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_star_border" android:layout_weight="1.0" android:contentDescription="@string/todo" />
+                            <ImageView android:id="@id/iv_star_2" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_star_border" android:layout_weight="1.0" android:contentDescription="@string/todo" />
+                            <ImageView android:id="@id/iv_star_3" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_star_border" android:layout_weight="1.0" android:contentDescription="@string/todo" />
+                            <ImageView android:id="@id/iv_star_4" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_star_border" android:layout_weight="1.0" android:contentDescription="@string/todo" />
+                            <ImageView android:id="@id/iv_star_5" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_star_border" android:layout_weight="1.0" android:contentDescription="@string/todo" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0" android:layout_marginStart="@dimen/_15sdp">
+                        <TextView android:textSize="@dimen/_11ssp" android:textColor="#ffffeb3b" android:id="@id/tv_page_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+                        <LinearLayout android:orientation="horizontal" android:padding="@dimen/_5sdp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+                            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <TextView android:textSize="@dimen/_8ssp" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/directed_by" />
+                                <TextView android:textSize="@dimen/_8ssp" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_3sdp" android:text="@string/release_date" />
+                                <TextView android:textSize="@dimen/_8ssp" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_3sdp" android:text="@string/genre" />
+                                <TextView android:textSize="@dimen/_8ssp" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_3sdp" android:text="Descricao" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/_15sdp">
+                                <TextView android:textSize="@dimen/_8ssp" android:textColor="#ffb8b8b8" android:id="@id/tv_directed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/n_a" />
+                                <TextView android:textSize="@dimen/_8ssp" android:textColor="#ffb8b8b8" android:id="@id/tv_release" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_3sdp" android:text="@string/n_a" />
+                                <TextView android:textSize="@dimen/_8ssp" android:textColor="#ffb8b8b8" android:id="@id/tv_genre" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_3sdp" android:text="@string/n_a" />
+                                <TextView android:textSize="@dimen/_8ssp" android:textColor="#ffb8b8b8" android:id="@id/tv_plot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_3sdp" android:text="@string/n_a" android:maxLines="3" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <LinearLayout android:id="@id/iv_fav1" android:background="@drawable/focused_save_btn" android:padding="@dimen/_3sdp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_3sdp">
+                                <ImageView android:id="@id/iv_fav" android:background="@drawable/focused_img_selector_color" android:padding="@dimen/_2sdp" android:layout_width="@dimen/_15sdp" android:layout_height="@dimen/_15sdp" android:src="@drawable/ic_favorite_border" android:contentDescription="@string/todo" app:tint="@color/white" />
+                                <TextView android:textSize="@dimen/_8ssp" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="FAVORITAR" android:layout_marginStart="@dimen/_2sdp" />
+                            </LinearLayout>
+                            <LinearLayout android:id="@id/ll_play_trailer" android:background="@drawable/focused_save_btn" android:padding="@dimen/_3sdp" android:focusable="true" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_3sdp" android:layout_marginStart="@dimen/_10sdp">
+                                <ImageView android:layout_gravity="center" android:id="@id/tv_trailer" android:padding="@dimen/_2sdp" android:layout_width="@dimen/_15sdp" android:layout_height="@dimen/_15sdp" android:src="@drawable/ic_smart_display" android:contentDescription="@string/todo" app:tint="@color/white" />
+                                <TextView android:textSize="@dimen/_8ssp" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/trailer" android:layout_marginStart="@dimen/_2sdp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_8sdp" android:layout_marginBottom="@dimen/_5sdp" android:layout_marginStart="@dimen/_10ssp" android:layout_marginEnd="@dimen/_10ssp">
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_seasons" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <TextView android:textSize="@dimen/_12ssp" android:textStyle="bold" android:textColor="@color/ns_classic_primary" android:layout_gravity="center" android:id="@id/tv_empty_msg" android:background="@drawable/bg_episodes_card" android:paddingTop="@dimen/_3sdp" android:paddingBottom="@dimen/_3sdp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/_6sdp" android:text="@string/err_no_episodes_found" android:paddingStart="@dimen/_8sdp" android:paddingEnd="@dimen/_8sdp" />
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_episodes" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_1sdp" />
+                    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/ll_adView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp" android:layout_marginBottom="@dimen/_10ssp" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+    <FrameLayout android:id="@id/fl_shimmer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

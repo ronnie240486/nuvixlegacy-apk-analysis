@@ -1,0 +1,19 @@
+# Ferramentas e caches locais
+.tools/
+.cache/
+*.log~
+
+# Saídas temporárias de editores e sistema
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Arquivos temporários de análise que não pertencem ao conjunto publicado
+/tmp/
+
+# Nunca versionar chaves privadas por engano
+*.keystore
+*.jks
+*.p12
+*.pem.key

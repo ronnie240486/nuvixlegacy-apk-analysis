@@ -1,0 +1,41 @@
+
+Symbol table '.dynsym' contains 38 entries:
+   Num:    Value  Size Type    Bind   Vis      Ndx Name
+     0: 00000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 00000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_finalize@LIBC (2)
+     2: 00000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_atexit@LIBC (2)
+     3: 00000000     0 FUNC    GLOBAL DEFAULT  UND __register_atfork@LIBC (2)
+     4: 00000000     0 FUNC    GLOBAL DEFAULT  UND _Znwj
+     5: 00000000     0 FUNC    GLOBAL DEFAULT  UND memset@LIBC (2)
+     6: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE9push_backEc
+     7: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZdlPvj
+     8: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6appendEPKcj
+     9: 00000000     0 FUNC    GLOBAL DEFAULT  UND __stack_chk_fail@LIBC (2)
+    10: 00000000     0 FUNC    GLOBAL DEFAULT  UND memmove@LIBC (2)
+    11: 00000000     0 FUNC    GLOBAL DEFAULT  UND strlen@LIBC (2)
+    12: 00000000     0 FUNC    GLOBAL DEFAULT  UND memchr@LIBC (2)
+    13: 00000000     0 FUNC    GLOBAL DEFAULT  UND memcmp@LIBC (2)
+    14: 00000000     0 FUNC    GLOBAL DEFAULT  UND exit@LIBC (2)
+    15: 00000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_allocate_exception
+    16: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZNSt12length_errorD1Ev
+    17: 00000000     0 OBJECT  GLOBAL DEFAULT  UND _ZTISt12length_error
+    18: 00000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_throw
+    19: 00000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_free_exception
+    20: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZNSt11logic_errorC2EPKc
+    21: 00000000     0 OBJECT  GLOBAL DEFAULT  UND _ZTVSt12length_error
+    22: 00000000     0 FUNC    GLOBAL DEFAULT  UND __gxx_personality_v0
+    23: 00000000     0 OBJECT  GLOBAL DEFAULT  UND __sF@LIBC (2)
+    24: 00000000     0 FUNC    GLOBAL DEFAULT  UND fprintf@LIBC (2)
+    25: 00000000     0 FUNC    GLOBAL DEFAULT  UND fflush@LIBC (2)
+    26: 00000000     0 FUNC    GLOBAL DEFAULT  UND abort@LIBC (2)
+    27: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_rwlock_wrlock@LIBC (2)
+    28: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_rwlock_unlock@LIBC (2)
+    29: 00000000     0 FUNC    GLOBAL DEFAULT  UND malloc@LIBC (2)
+    30: 00000000     0 FUNC    GLOBAL DEFAULT  UND memcpy@LIBC (2)
+    31: 00000000     0 FUNC    GLOBAL DEFAULT  UND free@LIBC (2)
+    32: 00000000     0 FUNC    GLOBAL DEFAULT  UND dl_iterate_phdr@LIBC (3)
+    33: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_rwlock_rdlock@LIBC (2)
+    34: 00000000     0 FUNC    GLOBAL DEFAULT  UND fwrite@LIBC (2)
+    35: 00002570   395 FUNC    GLOBAL DEFAULT   14 _Z13base64_decodeRKNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE
+    36: 00002700  1411 FUNC    GLOBAL DEFAULT   14 Java_com_diegodev_apidesportes_jogos_callback_na_ae
+    37: 00002dc0  1519 FUNC    GLOBAL DEFAULT   14 Java_com_diegodev_apidesportes_jogos_callback_na_verificarUrlNativa

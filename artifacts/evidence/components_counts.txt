@@ -1,0 +1,6 @@
+activities_total=25
+activities_exported=13
+receivers_total=1
+receivers_exported=1
+providers_total=3
+services_total=1

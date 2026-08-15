@@ -1,0 +1,75 @@
+Android
+r29-beta4
+14033849
+__cxa_finalize
+__cxa_atexit
+__register_atfork
+_Z13base64_decodeRKNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE
+_Znwj
+_ZNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE9push_backEc
+_ZdlPvj
+__cxa_end_cleanup
+__gxx_personality_v0
+Java_com_diegodev_apidesportes_jogos_callback_na_ae
+_ZNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6appendEPKcj
+__stack_chk_fail
+__stack_chk_guard
+Java_com_diegodev_apidesportes_jogos_callback_na_verificarUrlNativa
+strlen
+memchr
+memcmp
+__cxa_allocate_exception
+__cxa_throw
+__cxa_free_exception
+_ZTISt12length_error
+_ZNSt12length_errorD1Ev
+_ZNSt11logic_errorC2EPKc
+_ZTVSt12length_error
+memmove
+memset
+libc.so
+liblog.so
+libc++_shared.so
+libm.so
+libdl.so
+libapi_esportes.so
+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
+basic_string
+b7d01a5c12e1d91039181
+39a3435cfc1a1fddb
+f7d590a9520708141
+9e884a703d17d3bd
+6cd99951bdff26e534238a909
+BpLmNvbQ==
+"FuyD
+<IyD	h	h
+(FIF"F
+7IyD	h	h
+JxDzD
+IyD	h
+Android (13989888, +pgo, +bolt, +lto, +mlgo, based on r563880c) clang version 21.0.0 (https://android.googlesource.com/toolchain/llvm-project 5e96669f06077099aa41290cdb4c5e6fa0f59349)
+Android (13989888, based on r563880c) clang version 21.0.0 (https://android.googlesource.com/toolchain/llvm-project 5e96669f06077099aa41290cdb4c5e6fa0f59349)
+Linker: LLD 21.0.0 (/mnt/disks/build-disk/src/googleplex-android/llvm-r563880-release/out/llvm-project/llvm 5e96669f06077099aa41290cdb4c5e6fa0f59349)
+aeabi
+C2.09
+.fini_array
+.ARM.exidx
+.text
+.comment
+.note.android.ident
+.got.plt
+.rel.plt
+.ARM.attributes
+.dynstr
+.gnu.version_r
+.data.rel.ro
+.rel.dyn
+.gnu.version
+.dynsym
+.gnu.hash
+.relro_padding
+.note.gnu.build-id
+.dynamic
+.ARM.extab
+.shstrtab
+.rodata

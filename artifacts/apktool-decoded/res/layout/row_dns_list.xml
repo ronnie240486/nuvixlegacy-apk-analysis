@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:id="@id/ll_dns_list" android:background="@drawable/focused_dns" android:paddingTop="@dimen/_3sdp" android:paddingBottom="@dimen/_4sdp" android:focusable="true" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/_5sdp" android:paddingEnd="@dimen/_6sdp" android:layout_marginEnd="@dimen/_5sdp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_tick" android:padding="@dimen/_1sdp" android:layout_width="@dimen/_16sdp" android:layout_height="@dimen/_16sdp" android:src="@drawable/ic_check_circle" android:scaleType="centerCrop" />
+    <TextView android:textSize="@dimen/_12ssp" android:textColor="@color/white" android:id="@id/tv_dns" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/external" android:layout_marginStart="@dimen/_5sdp" />
+</LinearLayout>

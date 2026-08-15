@@ -1,0 +1,31 @@
+
+Symbol table '.dynsym' contains 28 entries:
+   Num:    Value  Size Type    Bind   Vis      Ndx Name
+     0: 00000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 00000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_finalize@LIBC (2)
+     2: 00000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_atexit@LIBC (2)
+     3: 00000000     0 FUNC    GLOBAL DEFAULT  UND __register_atfork@LIBC (2)
+     4: 00000000     0 FUNC    GLOBAL DEFAULT  UND _Znwj
+     5: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE9push_backEc
+     6: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZdlPvj
+     7: 00000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_end_cleanup
+     8: 00000000     0 FUNC    GLOBAL DEFAULT  UND __gxx_personality_v0
+     9: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6appendEPKcj
+    10: 00000000     0 FUNC    GLOBAL DEFAULT  UND __stack_chk_fail@LIBC (2)
+    11: 00000000     0 OBJECT  GLOBAL DEFAULT  UND __stack_chk_guard@LIBC (2)
+    12: 00000000     0 FUNC    GLOBAL DEFAULT  UND strlen@LIBC (2)
+    13: 00000000     0 FUNC    GLOBAL DEFAULT  UND memchr@LIBC (2)
+    14: 00000000     0 FUNC    GLOBAL DEFAULT  UND memcmp@LIBC (2)
+    15: 00000000     0 FUNC    GLOBAL DEFAULT  UND exit@LIBC (2)
+    16: 00000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_allocate_exception
+    17: 00000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_throw
+    18: 00000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_free_exception
+    19: 00000000     0 OBJECT  GLOBAL DEFAULT  UND _ZTISt12length_error
+    20: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZNSt12length_errorD1Ev
+    21: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZNSt11logic_errorC2EPKc
+    22: 00000000     0 OBJECT  GLOBAL DEFAULT  UND _ZTVSt12length_error
+    23: 00000000     0 FUNC    GLOBAL DEFAULT  UND memmove@LIBC (2)
+    24: 00000000     0 FUNC    GLOBAL DEFAULT  UND memset@LIBC (2)
+    25: 00000ac5   192 FUNC    GLOBAL DEFAULT   13 _Z13base64_decodeRKNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE
+    26: 00000b85   800 FUNC    GLOBAL DEFAULT   13 Java_com_diegodev_apidesportes_jogos_callback_na_ae
+    27: 00000f61   900 FUNC    GLOBAL DEFAULT   13 Java_com_diegodev_apidesportes_jogos_callback_na_verificarUrlNativa

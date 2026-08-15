@@ -1,0 +1,133 @@
+## file
+/home/ubuntu/nuvixlegacy_analysis/input/NUVIXLEGACY.apk: Android package (APK), with AndroidManifest.xml
+## sha256
+3e540c8790056e284a81eab785e4b6dc6ff5fcd6fe0a7f456f1a60539e18df97  /home/ubuntu/nuvixlegacy_analysis/input/NUVIXLEGACY.apk
+## size
+15510077 bytes
+## tool versions
+apktool: MISSING
+jadx: MISSING
+aapt2: MISSING
+aapt: MISSING
+apkanalyzer: MISSING
+zipinfo: ZipInfo 3.00 of 20 April 2009, by Greg Roelofs and the Info-ZIP group.
+## top-level entries
+AndroidManifest.xml
+DebugProbesKt.bin
+META-INF
+androidsupportmultidexversion.txt
+assets
+classes.dex
+inventory.txt
+kotlin
+lib
+okhttp3
+res
+resources.arsc
+## dex files
+/home/ubuntu/nuvixlegacy_analysis/raw/classes.dex	5911836 bytes
+## native libraries
+/home/ubuntu/nuvixlegacy_analysis/raw/lib/arm64-v8a/libandroidx.graphics.path.so	10096 bytes
+/home/ubuntu/nuvixlegacy_analysis/raw/lib/arm64-v8a/libapi_esportes.so	33760 bytes
+/home/ubuntu/nuvixlegacy_analysis/raw/lib/arm64-v8a/libc++_shared.so	1374336 bytes
+/home/ubuntu/nuvixlegacy_analysis/raw/lib/arm64-v8a/libnative.so	52464 bytes
+/home/ubuntu/nuvixlegacy_analysis/raw/lib/armeabi-v7a/libandroidx.graphics.path.so	7252 bytes
+/home/ubuntu/nuvixlegacy_analysis/raw/lib/armeabi-v7a/libapi_esportes.so	7444 bytes
+/home/ubuntu/nuvixlegacy_analysis/raw/lib/armeabi-v7a/libc++_shared.so	963028 bytes
+/home/ubuntu/nuvixlegacy_analysis/raw/lib/armeabi-v7a/libnative.so	20056 bytes
+/home/ubuntu/nuvixlegacy_analysis/raw/lib/x86/libandroidx.graphics.path.so	9284 bytes
+/home/ubuntu/nuvixlegacy_analysis/raw/lib/x86/libapi_esportes.so	30088 bytes
+/home/ubuntu/nuvixlegacy_analysis/raw/lib/x86/libc++_shared.so	1255932 bytes
+/home/ubuntu/nuvixlegacy_analysis/raw/lib/x86/libnative.so	49368 bytes
+/home/ubuntu/nuvixlegacy_analysis/raw/lib/x86_64/libandroidx.graphics.path.so	10760 bytes
+/home/ubuntu/nuvixlegacy_analysis/raw/lib/x86_64/libapi_esportes.so	33360 bytes
+/home/ubuntu/nuvixlegacy_analysis/raw/lib/x86_64/libc++_shared.so	1337488 bytes
+/home/ubuntu/nuvixlegacy_analysis/raw/lib/x86_64/libnative.so	53232 bytes
+## certs
+CERT.RSA	1714 bytes
+CERT.SF	196001 bytes
+MANIFEST.MF	195957 bytes
+androidx.activity_activity-compose.version	6 bytes
+androidx.activity_activity-ktx.version	6 bytes
+androidx.activity_activity.version	6 bytes
+androidx.annotation_annotation-experimental.version	6 bytes
+androidx.appcompat_appcompat-resources.version	6 bytes
+androidx.appcompat_appcompat.version	6 bytes
+androidx.arch.core_core-runtime.version	67 bytes
+androidx.autofill_autofill.version	6 bytes
+androidx.cardview_cardview.version	6 bytes
+androidx.compose.animation_animation-core.version	6 bytes
+androidx.compose.animation_animation.version	6 bytes
+androidx.compose.foundation_foundation-layout.version	6 bytes
+androidx.compose.foundation_foundation.version	6 bytes
+androidx.compose.material3_material3.version	6 bytes
+androidx.compose.material_material-icons-core.version	6 bytes
+androidx.compose.material_material-ripple.version	6 bytes
+androidx.compose.runtime_runtime-saveable.version	6 bytes
+androidx.compose.runtime_runtime.version	6 bytes
+androidx.compose.ui_ui-geometry.version	6 bytes
+androidx.compose.ui_ui-graphics.version	6 bytes
+androidx.compose.ui_ui-text.version	6 bytes
+androidx.compose.ui_ui-tooling-preview.version	6 bytes
+androidx.compose.ui_ui-unit.version	6 bytes
+androidx.compose.ui_ui-util.version	6 bytes
+androidx.compose.ui_ui.version	6 bytes
+androidx.constraintlayout_constraintlayout.version	6 bytes
+androidx.coordinatorlayout_coordinatorlayout.version	6 bytes
+androidx.core_core-ktx.version	7 bytes
+androidx.core_core-viewtree.version	6 bytes
+androidx.core_core.version	7 bytes
+androidx.cursoradapter_cursoradapter.version	6 bytes
+androidx.customview_customview-poolingcontainer.version	6 bytes
+androidx.customview_customview.version	6 bytes
+androidx.databinding_viewbinding.version	6 bytes
+androidx.documentfile_documentfile.version	6 bytes
+androidx.drawerlayout_drawerlayout.version	6 bytes
+androidx.dynamicanimation_dynamicanimation.version	6 bytes
+androidx.emoji2_emoji2-views-helper.version	6 bytes
+androidx.emoji2_emoji2.version	6 bytes
+androidx.exifinterface_exifinterface.version	6 bytes
+androidx.fragment_fragment.version	6 bytes
+androidx.graphics_graphics-path.version	6 bytes
+androidx.interpolator_interpolator.version	6 bytes
+androidx.leanback_leanback-grid.version	6 bytes
+androidx.leanback_leanback.version	6 bytes
+androidx.legacy_legacy-support-core-utils.version	6 bytes
+androidx.lifecycle_lifecycle-livedata-core-ktx.version	6 bytes
+androidx.lifecycle_lifecycle-livedata-core.version	6 bytes
+androidx.lifecycle_lifecycle-livedata-ktx.version	6 bytes
+androidx.lifecycle_lifecycle-livedata.version	6 bytes
+androidx.lifecycle_lifecycle-process.version	6 bytes
+androidx.lifecycle_lifecycle-runtime-compose.version	6 bytes
+androidx.lifecycle_lifecycle-runtime-ktx.version	6 bytes
+androidx.lifecycle_lifecycle-runtime.version	6 bytes
+androidx.lifecycle_lifecycle-viewmodel-ktx.version	6 bytes
+androidx.lifecycle_lifecycle-viewmodel-savedstate.version	6 bytes
+androidx.lifecycle_lifecycle-viewmodel.version	6 bytes
+androidx.loader_loader.version	6 bytes
+androidx.localbroadcastmanager_localbroadcastmanager.version	6 bytes
+androidx.media_media.version	6 bytes
+androidx.palette_palette.version	6 bytes
+androidx.print_print.version	6 bytes
+androidx.profileinstaller_profileinstaller.version	6 bytes
+androidx.recyclerview_recyclerview.version	6 bytes
+androidx.room_room-ktx.version	6 bytes
+androidx.room_room-runtime.version	6 bytes
+androidx.savedstate_savedstate-ktx.version	6 bytes
+androidx.savedstate_savedstate.version	6 bytes
+androidx.sqlite_sqlite-framework.version	6 bytes
+androidx.sqlite_sqlite.version	6 bytes
+androidx.startup_startup-runtime.version	6 bytes
+androidx.tracing_tracing.version	6 bytes
+androidx.transition_transition.version	6 bytes
+androidx.vectordrawable_vectordrawable-animated.version	6 bytes
+androidx.vectordrawable_vectordrawable.version	6 bytes
+androidx.versionedparcelable_versionedparcelable.version	6 bytes
+androidx.viewpager2_viewpager2.version	6 bytes
+androidx.viewpager_viewpager.version	6 bytes
+com.google.android.material_material.version	7 bytes
+kotlinx_coroutines_android.version	5 bytes
+kotlinx_coroutines_core.version	5 bytes
+version-control-info.textproto	46 bytes
+## file count
+2085

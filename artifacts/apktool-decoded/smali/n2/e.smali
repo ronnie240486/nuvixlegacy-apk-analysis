@@ -1,0 +1,50 @@
+.class public final Ln2/e;
+.super Ljava/lang/Object;
+.source "r8-map-id-3b0fe1fe3be310c6d55756f0e4e73dab92065bed65670a23f41d484dc89ae294"
+
+
+# instance fields
+.field public final a:Ln2/d;
+
+.field public final b:Lp2/f;
+
+.field public final c:Landroid/content/ContentResolver;
+
+.field public final d:Ljava/util/ArrayList;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/util/ArrayList;Ln2/d;Lp2/f;Landroid/content/ContentResolver;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p2, p0, Ln2/e;->a:Ln2/d;
+
+    .line 5
+    .line 6
+    iput-object p3, p0, Ln2/e;->b:Lp2/f;
+
+    .line 7
+    .line 8
+    iput-object p4, p0, Ln2/e;->c:Landroid/content/ContentResolver;
+
+    .line 9
+    .line 10
+    iput-object p1, p0, Ln2/e;->d:Ljava/util/ArrayList;
+
+    .line 11
+    .line 12
+    return-void
+.end method

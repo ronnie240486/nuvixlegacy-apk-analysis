@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/theme_bg" android:background="@drawable/bg_dark" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/_16sdp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false">
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ImageView android:layout_width="@dimen/_100sdp" android:layout_height="@dimen/_100sdp" android:src="@drawable/logo" app:hv_corner_radius="@dimen/_5sdp" />
+                <RelativeLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/rl_list_single" android:background="@drawable/focused_btn_ui_selector" android:focusable="true" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp">
+                    <ImageView android:id="@id/iv_logo_3" android:padding="@dimen/_4sdp" android:layout_width="@dimen/_30sdp" android:layout_height="@dimen/_30sdp" android:src="@drawable/ic_link" android:contentDescription="@string/todo" app:tint="?ns_black" />
+                    <TextView android:textSize="@dimen/_10ssp" android:textStyle="bold" android:textColor="?ns_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stream_list" android:layout_centerInParent="true" android:layout_marginEnd="@dimen/_6sdp" android:layout_toEndOf="@id/iv_logo_3" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0" android:layout_marginStart="@dimen/_10sdp">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/bg_card_sub" android:padding="@dimen/_15sdp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" android:backgroundTint="@color/white">
+                <TextView android:textSize="@dimen/_11ssp" android:textColor="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_10sdp" android:text="@string/play_single_stream_url" android:textAlignment="viewStart" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/bg_edit_text" android:layout_width="fill_parent" android:layout_height="@dimen/_30sdp" android:layout_marginBottom="@dimen/_7sdp">
+                    <ImageView android:padding="@dimen/_8sdp" android:layout_width="@dimen/_30sdp" android:layout_height="fill_parent" android:src="@drawable/ic_profile" android:contentDescription="@string/todo" app:tint="@color/white" />
+                    <View android:background="#23ffffff" android:layout_width="@dimen/_1sdp" android:layout_height="fill_parent" android:layout_marginTop="@dimen/_5sdp" android:layout_marginBottom="@dimen/_5sdp" android:layout_marginEnd="@dimen/_2sdp" />
+                    <EditText android:textSize="@dimen/_10ssp" android:textColor="@color/white" android:textColorHint="@color/white" android:id="@id/et_any_name" android:background="@drawable/focused_edit_text" android:padding="@dimen/_5sdp" android:nextFocusDown="@id/et_url" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/any_name" android:maxLines="1" android:inputType="text" android:imeOptions="actionNext|flagNoFullscreen" android:textAlignment="viewStart" android:layout_marginEnd="@dimen/_3sdp" android:importantForAutofill="no" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/bg_edit_text" android:layout_width="fill_parent" android:layout_height="@dimen/_30sdp" android:layout_marginBottom="@dimen/_8sdp">
+                    <ImageView android:padding="@dimen/_8sdp" android:layout_width="@dimen/_30sdp" android:layout_height="fill_parent" android:src="@drawable/ic_link" android:contentDescription="@string/todo" app:tint="@color/white" />
+                    <View android:background="#23ffffff" android:layout_width="@dimen/_1sdp" android:layout_height="fill_parent" android:layout_marginTop="@dimen/_5sdp" android:layout_marginBottom="@dimen/_5sdp" android:layout_marginEnd="@dimen/_2sdp" />
+                    <EditText android:textSize="@dimen/_10ssp" android:textColor="@color/white" android:textColorHint="@color/white" android:id="@id/et_url" android:background="@drawable/focused_edit_text" android:padding="@dimen/_5sdp" android:nextFocusUp="@id/et_any_name" android:nextFocusDown="@id/ll_btn_add" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/stream_name_extension" android:maxLines="1" android:inputType="textUri" android:imeOptions="actionDone|flagNoFullscreen" android:textAlignment="viewStart" android:layout_marginEnd="@dimen/_3sdp" android:importantForAutofill="no" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_btn_add" android:background="@drawable/focused_btn_danger" android:focusable="true" android:focusableInTouchMode="false" android:nextFocusUp="@id/et_url" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp">
+                    <ImageView android:id="@id/iv_add" android:padding="@dimen/_8sdp" android:layout_width="@dimen/_35sdp" android:layout_height="@dimen/_30sdp" android:src="@drawable/ic_add_circle" android:scaleType="centerCrop" android:contentDescription="@string/todo" app:tint="@color/white" />
+                    <ProgressBar android:id="@id/pb_add" android:padding="@dimen/_6sdp" android:visibility="gone" android:layout_width="@dimen/_35sdp" android:layout_height="@dimen/_30sdp" android:indeterminate="true" android:indeterminateTint="@color/white" />
+                    <TextView android:textSize="@dimen/_14ssp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_video" android:layout_marginEnd="@dimen/_10sdp" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

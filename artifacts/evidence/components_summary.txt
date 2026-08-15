@@ -1,0 +1,22 @@
+## manifest counts
+activity          25
+service           1
+receiver          1
+provider          3
+uses-permission   15
+uses-feature      9
+## exported components
+        <activity android:configChanges="keyboard|keyboardHidden|navigation" android:exported="true" android:name="com.legacy.prime.activity.LiveTvActivity1" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation" android:exported="true" android:name="com.diegodev.apidesportes.jogos.ActivityEsporte" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation" android:exported="true" android:name="com.legacy.prime.activity.player.PlayerSeries" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation" android:exported="true" android:name="com.legacy.prime.activity.ui.AtvActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation" android:exported="true" android:name="com.legacy.prime.activity.Welcome" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation" android:exported="true" android:name="com.legacy.prime.activity.Mobile.ProfileActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation" android:exported="true" android:name="com.legacy.prime.activity.player.PlayerMovies" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation" android:exported="true" android:name="com.legacy.prime.activity.Mobile.MobileActivity" android:screenOrientation="sensorLandscape" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation" android:exported="true" android:name="com.legacy.prime.activity.Mobile.QrScannerActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation" android:exported="true" android:name="com.legacy.prime.activity.AddListMac" android:screenOrientation="sensorLandscape" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation" android:exported="true" android:name="com.legacy.prime.activity.Login.SignInActivity" android:screenOrientation="sensorLandscape" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation" android:exported="true" android:name="com.legacy.prime.activity.Login.SplashInicio" android:screenOrientation="sensorLandscape" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation" android:exported="true" android:name="com.legacy.prime.activity.Login.ActivityMac" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar">
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">

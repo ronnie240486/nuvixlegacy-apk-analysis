@@ -1,0 +1,78 @@
+
+Symbol table '.dynsym' contains 75 entries:
+   Num:    Value  Size Type    Bind   Vis      Ndx Name
+     0: 00000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 00000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_finalize@LIBC (2)
+     2: 00000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_atexit@LIBC (2)
+     3: 00000000     0 FUNC    GLOBAL DEFAULT  UND __register_atfork@LIBC (2)
+     4: 00000000     0 FUNC    GLOBAL DEFAULT  UND _Znwj
+     5: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE9push_backEc
+     6: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZdlPvj
+     7: 00000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_end_cleanup
+     8: 00000000     0 FUNC    GLOBAL DEFAULT  UND __gxx_personality_v0
+     9: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZNKSt6__ndk18ios_base6getlocEv
+    10: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZNKSt6__ndk16locale9use_facetERNS0_2idE
+    11: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZNSt6__ndk16localeD1Ev
+    12: 00000000     0 FUNC    GLOBAL DEFAULT  UND strlen@LIBC (2)
+    13: 00000000     0 FUNC    GLOBAL DEFAULT  UND memchr@LIBC (2)
+    14: 00000000     0 FUNC    GLOBAL DEFAULT  UND memcmp@LIBC (2)
+    15: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZNSt6__ndk113basic_filebufIcNS_11char_traitsIcEEED1Ev
+    16: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZNSt6__ndk113basic_istreamIcNS_11char_traitsIcEEED2Ev
+    17: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZNSt6__ndk19basic_iosIcNS_11char_traitsIcEEED2Ev
+    18: 00000000     0 FUNC    GLOBAL DEFAULT  UND __stack_chk_fail@LIBC (2)
+    19: 00000000     0 OBJECT  GLOBAL DEFAULT  UND __stack_chk_guard@LIBC (2)
+    20: 00000000     0 OBJECT  GLOBAL DEFAULT  UND _ZNSt6__ndk15ctypeIcE2idE
+    21: 00000000     0 OBJECT  GLOBAL DEFAULT  UND _ZTTNSt6__ndk114basic_ifstreamIcNS_11char_traitsIcEEEE
+    22: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZNSt6__ndk18ios_base4initEPv
+    23: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZNSt6__ndk113basic_filebufIcNS_11char_traitsIcEEEC1Ev
+    24: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZNSt6__ndk113basic_filebufIcNS_11char_traitsIcEEE4openEPKcj
+    25: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZNSt6__ndk18ios_base5clearEj
+    26: 00000000     0 OBJECT  GLOBAL DEFAULT  UND _ZTVNSt6__ndk114basic_ifstreamIcNS_11char_traitsIcEEEE
+    27: 00000000     0 FUNC    GLOBAL DEFAULT  UND exit@LIBC (2)
+    28: 00000000     0 FUNC    GLOBAL DEFAULT  UND stat@LIBC (2)
+    29: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6assignEPKc
+    30: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6appendEPKc
+    31: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEaSERKS5_
+    32: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6appendEPKcj
+    33: 00000000     0 FUNC    GLOBAL DEFAULT  UND gethostbyname@LIBC (2)
+    34: 00000000     0 FUNC    GLOBAL DEFAULT  UND socket@LIBC (2)
+    35: 00000000     0 FUNC    GLOBAL DEFAULT  UND __memcpy_chk@LIBC (2)
+    36: 00000000     0 FUNC    GLOBAL DEFAULT  UND connect@LIBC (2)
+    37: 00000000     0 FUNC    GLOBAL DEFAULT  UND __strlen_chk@LIBC (2)
+    38: 00000000     0 FUNC    GLOBAL DEFAULT  UND sendto@LIBC (2)
+    39: 00000000     0 FUNC    GLOBAL DEFAULT  UND recvfrom@LIBC (2)
+    40: 00000000     0 FUNC    GLOBAL DEFAULT  UND close@LIBC (2)
+    41: 00000000     0 FUNC    GLOBAL DEFAULT  UND strstr@LIBC (2)
+    42: 00000000     0 FUNC    GLOBAL DEFAULT  UND __android_log_print
+    43: 00000000     0 FUNC    GLOBAL DEFAULT  UND __vsnprintf_chk@LIBC (2)
+    44: 00000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_begin_catch
+    45: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZSt9terminatev
+    46: 00000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_allocate_exception
+    47: 00000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_throw
+    48: 00000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_free_exception
+    49: 00000000     0 OBJECT  GLOBAL DEFAULT  UND _ZTISt12length_error
+    50: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZNSt12length_errorD1Ev
+    51: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZNSt11logic_errorC2EPKc
+    52: 00000000     0 OBJECT  GLOBAL DEFAULT  UND _ZTVSt12length_error
+    53: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZNSt6__ndk113basic_istreamIcNS_11char_traitsIcEEE6sentryC1ERS3_b
+    54: 00000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_end_catch
+    55: 00000000     0 FUNC    GLOBAL DEFAULT  UND __cxa_rethrow
+    56: 00000000     0 OBJECT  GLOBAL DEFAULT  UND _ZTISt12out_of_range
+    57: 00000000     0 FUNC    GLOBAL DEFAULT  UND _ZNSt12out_of_rangeD1Ev
+    58: 00000000     0 OBJECT  GLOBAL DEFAULT  UND _ZTVSt12out_of_range
+    59: 00000000     0 FUNC    GLOBAL DEFAULT  UND memcpy@LIBC (2)
+    60: 00000000     0 FUNC    GLOBAL DEFAULT  UND memmove@LIBC (2)
+    61: 00000000     0 FUNC    GLOBAL DEFAULT  UND memset@LIBC (2)
+    62: 000021e1   844 FUNC    GLOBAL DEFAULT   13 _Z22extrairPacoteDoApkPathRKNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE
+    63: 00003fe9   208 FUNC    WEAK   DEFAULT   13 _ZNSt6__ndk16vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS4_IS6_EEE16__init_with_sizeB8ne210000IPKS6_SB_EEvT_T0_j
+    64: 000032cd  1220 FUNC    GLOBAL DEFAULT   13 Java_com_legacy_prime_callback_na_testTcp
+    65: 00001db9   812 FUNC    GLOBAL DEFAULT   13 Java_com_legacy_prime_callback_na_getRealApkPath
+    66: 000021a9    56 FUNC    WEAK   DEFAULT   13 _ZNSt6__ndk114basic_ifstreamIcNS_11char_traitsIcEEED1Ev
+    67: 00002985   864 FUNC    GLOBAL DEFAULT   13 Java_com_legacy_prime_callback_na_ae
+    68: 00003891  1412 FUNC    GLOBAL DEFAULT   13 Java_com_legacy_prime_callback_na_txt
+    69: 00001cc9   192 FUNC    GLOBAL DEFAULT   13 base64_decode
+    70: 00001d89    24 FUNC    GLOBAL DEFAULT   13 Java_com_legacy_prime_callback_na_ei
+    71: 00001da1    24 FUNC    GLOBAL DEFAULT   13 Java_com_legacy_prime_callback_na_ou
+    72: 0000252d  1112 FUNC    GLOBAL DEFAULT   13 Java_com_legacy_prime_callback_na_isValidApkPath
+    73: 00002df9  1156 FUNC    GLOBAL DEFAULT   13 Java_com_legacy_prime_callback_na_ver
+    74: 0000416f    68 FUNC    WEAK   DEFAULT   13 _ZNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE25__init_copy_ctor_externalEPKcj

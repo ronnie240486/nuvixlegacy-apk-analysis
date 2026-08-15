@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_login_list" android:background="@drawable/focused_bg_card_selector" android:focusable="true" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="@dimen/_36sdp" android:layout_margin="@dimen/_5sdp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false">
+        <ImageView android:id="@id/iv_list_logo" android:padding="@dimen/_6sdp" android:layout_width="@dimen/_36sdp" android:layout_height="@dimen/_36sdp" android:src="@drawable/ic_folder_connection" android:contentDescription="@string/todo" app:tint="@color/black" />
+        <TextView android:textSize="@dimen/_9ssp" android:textStyle="bold" android:textColor="@color/black" android:layout_gravity="center" android:id="@id/iv_list_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/login_with_xtream_codes" android:layout_weight="1.0" android:textAlignment="center" android:layout_marginEnd="@dimen/_10sdp" />
+        <ImageView android:id="@id/iv_more" android:padding="@dimen/_8sdp" android:layout_width="@dimen/_30sdp" android:layout_height="@dimen/_36sdp" android:src="@drawable/ic_arrow_right" android:contentDescription="@string/todo" app:tint="@color/black" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,501 @@
+## native metadata
+### lib/arm64-v8a/libandroidx.graphics.path.so
+/home/ubuntu/nuvixlegacy_analysis/raw/lib/arm64-v8a/libandroidx.graphics.path.so: ELF 64-bit LSB shared object, ARM aarch64, version 1 (SYSV), dynamically linked, BuildID[sha1]=a7846ae06d6bf6cf63fa7c5e056b5de493c71567, stripped
+  Class:                             ELF64
+  Type:                              DYN (Shared object file)
+  Machine:                           AArch64
+  Entry point address:               0x0
+needed:
+ 0x0000000000000001 (NEEDED)             Shared library: [libm.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libdl.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libc.so]
+exported symbols:
+JNI_OnLoad@@LIBANDROIDX.GRAPHICS.PATH
+### lib/arm64-v8a/libapi_esportes.so
+/home/ubuntu/nuvixlegacy_analysis/raw/lib/arm64-v8a/libapi_esportes.so: ELF 64-bit LSB shared object, ARM aarch64, version 1 (SYSV), dynamically linked, BuildID[sha1]=ec9aa927e6a664809cd538ae16f0a7e007c16bfe, stripped
+  Class:                             ELF64
+  Type:                              DYN (Shared object file)
+  Machine:                           AArch64
+  Entry point address:               0x0
+needed:
+ 0x0000000000000001 (NEEDED)             Shared library: [liblog.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libc++_shared.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libm.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libdl.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libc.so]
+exported symbols:
+_Z13base64_decodeRKNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE
+Java_com_diegodev_apidesportes_jogos_callback_na_ae
+Java_com_diegodev_apidesportes_jogos_callback_na_verificarUrlNativa
+### lib/arm64-v8a/libc++_shared.so
+/home/ubuntu/nuvixlegacy_analysis/raw/lib/arm64-v8a/libc++_shared.so: ELF 64-bit LSB shared object, ARM aarch64, version 1 (SYSV), dynamically linked, BuildID[sha1]=ba615e4ff75bc2d8ba1eee93f983e02bc427c433, stripped
+  Class:                             ELF64
+  Type:                              DYN (Shared object file)
+  Machine:                           AArch64
+  Entry point address:               0x0
+needed:
+ 0x0000000000000001 (NEEDED)             Shared library: [libc.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libm.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libdl.so]
+exported symbols:
+_ZNKSt12bad_any_cast4whatEv
+_ZNKSt6__ndk112ctype_bynameIcE10do_toupperEc
+_Znwm
+_ZNSt6__ndk16__sortIRNS_6__lessIxxEEPxEEvT0_S5_T_
+_ZNKSt6__ndk115error_condition7messageEv
+_ZNKSt6__ndk15ctypeIwE9do_narrowEwc
+_ZNKSt6__ndk115__codecvt_utf16IDiLb1EE10do_unshiftER9mbstate_tPcS4_RS4_
+_ZNSt6__ndk112strstreambufC1EPalS1_
+_ZNSt6__ndk119__thread_local_dataEv
+_ZNKSt6__ndk117moneypunct_bynameIwLb0EE14do_curr_symbolEv
+_ZdaPvmSt11align_val_t
+_ZNSt6__ndk16__sortIRNS_6__lessImmEEPmEEvT0_S5_T_
+_ZNSt6__ndk16gslice6__initEm
+_ZNSt6__ndk18ios_base5iwordEi
+_ZNSt6__ndk113basic_istreamIcNS_11char_traitsIcEEED2Ev
+_ZNKSt6__ndk119bad_expected_accessIvE4whatEv
+_ZNSt6__ndk119__shared_mutex_base4lockEv
+_ZNSt6__ndk112ctype_bynameIcEC1EPKcm
+__cxa_current_exception_type
+_ZNSt6__ndk112basic_stringIwNS_11char_traitsIwEENS_9allocatorIwEEE6assignEmw
+_ZNSt6__ndk121recursive_timed_mutexD2Ev
+_ZNSt6__ndk115basic_streambufIwNS_11char_traitsIwEEEC2Ev
+_ZNSt6__ndk18ios_base4swapERS0_
+_ZNKSt6__ndk114__codecvt_utf8IDsE13do_max_lengthEv
+_ZNSt11logic_errorD1Ev
+_ZNSt6__ndk115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEC2EOS5_
+_ZNKSt6__ndk114__codecvt_utf8IwE10do_unshiftER9mbstate_tPcS4_RS4_
+__cxa_init_primary_exception
+_ZNKSt6__ndk117moneypunct_bynameIwLb1EE13do_pos_formatEv
+_ZNKSt6__ndk14__fs10filesystem4path16__root_directoryEv
+_ZNKSt6__ndk17codecvtIcc9mbstate_tE9do_lengthERS1_PKcS5_m
+_ZNSt10bad_typeidD0Ev
+_ZNSt6__ndk119__shared_mutex_base15try_lock_sharedEv
+_ZNKSt6__ndk110moneypunctIcLb0EE16do_positive_signEv
+_ZNKSt6__ndk15ctypeIcE9do_narrowEPKcS3_cPc
+_ZNKSt6__ndk17codecvtIDic9mbstate_tE9do_lengthERS1_PKcS5_m
+_ZSt10unexpectedv
+_ZNSt6__ndk15stoldERKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPm
+_ZNSt6__ndk115basic_streambufIwNS_11char_traitsIwEEE5gbumpEi
+_ZNKSt6__ndk114collate_bynameIwE12do_transformEPKwS3_
+_ZNSt6__ndk112strstreambuf4swapERS0_
+_ZNKSt6__ndk13pmr28unsynchronized_pool_resource22__log2_pool_block_sizeEi
+_ZNSt12experimental19bad_optional_accessD0Ev
+_ZNSt6__ndk112basic_stringIwNS_11char_traitsIwEENS_9allocatorIwEEE21__grow_by_and_replaceEmmmmmmPKw
+_ZNKSt6__ndk112ctype_bynameIwE11do_scan_notEmPKwS3_
+_ZNSt6__ndk17codecvtIwc9mbstate_tEC1EPKcm
+_ZNSt6__ndk115numpunct_bynameIwED2Ev
+_ZNKSt6__ndk18time_getIwNS_19istreambuf_iteratorIwNS_11char_traitsIwEEEEE11do_get_yearES4_S4_RNS_8ios_baseERjP2tm
+_ZNSt9exceptionD0Ev
+_ZNSt14overflow_errorD2Ev
+_ZNSt6__ndk112basic_stringIwNS_11char_traitsIwEENS_9allocatorIwEEEC1ERKS5_RKS4_
+_ZNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6resizeEmc
+_ZNKSt6__ndk18messagesIcE8do_closeEl
+_ZNKSt6__ndk120__time_get_c_storageIcE7__weeksEv
+_ZNSt6__ndk14__fs10filesystem18directory_iterator11__incrementEPNS_10error_codeE
+_ZNSt6__ndk115basic_streambufIwNS_11char_traitsIwEEE5uflowEv
+_ZNKSt6__ndk114__codecvt_utf8IDiE6do_outER9mbstate_tPKDiS5_RS5_PcS7_RS7_
+_ZNKSt6__ndk120__codecvt_utf8_utf16IDiE16do_always_noconvEv
+_ZNSt6__ndk18to_charsEPcS0_fNS_12chars_formatEi
+_ZNSt6__ndk115basic_streambufIcNS_11char_traitsIcEEE6xsgetnEPcl
+### lib/arm64-v8a/libnative.so
+/home/ubuntu/nuvixlegacy_analysis/raw/lib/arm64-v8a/libnative.so: ELF 64-bit LSB shared object, ARM aarch64, version 1 (SYSV), dynamically linked, BuildID[sha1]=9283793287ac3f1f0dc4f63723d4823f550ca911, stripped
+  Class:                             ELF64
+  Type:                              DYN (Shared object file)
+  Machine:                           AArch64
+  Entry point address:               0x0
+needed:
+ 0x0000000000000001 (NEEDED)             Shared library: [liblog.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libc++_shared.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libm.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libdl.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libc.so]
+exported symbols:
+_Z22extrairPacoteDoApkPathRKNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE
+_ZNSt6__ndk16vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS4_IS6_EEE16__init_with_sizeB8ne210000IPKS6_SB_EEvT_T0_m
+Java_com_legacy_prime_callback_na_testTcp
+Java_com_legacy_prime_callback_na_getRealApkPath
+_ZNSt6__ndk114basic_ifstreamIcNS_11char_traitsIcEEED1Ev
+Java_com_legacy_prime_callback_na_ae
+Java_com_legacy_prime_callback_na_txt
+base64_decode
+Java_com_legacy_prime_callback_na_ei
+Java_com_legacy_prime_callback_na_ou
+Java_com_legacy_prime_callback_na_isValidApkPath
+Java_com_legacy_prime_callback_na_ver
+_ZNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE25__init_copy_ctor_externalEPKcm
+### lib/armeabi-v7a/libandroidx.graphics.path.so
+/home/ubuntu/nuvixlegacy_analysis/raw/lib/armeabi-v7a/libandroidx.graphics.path.so: ELF 32-bit LSB shared object, ARM, EABI5 version 1 (SYSV), dynamically linked, BuildID[sha1]=fa98a997cdd9b43f190a4bd20f3dad441b4062f0, stripped
+  Class:                             ELF32
+  Type:                              DYN (Shared object file)
+  Machine:                           ARM
+  Entry point address:               0x0
+needed:
+ 0x00000001 (NEEDED)                     Shared library: [libm.so]
+ 0x00000001 (NEEDED)                     Shared library: [libdl.so]
+ 0x00000001 (NEEDED)                     Shared library: [libc.so]
+exported symbols:
+JNI_OnLoad@@LIBANDROIDX.GRAPHICS.PATH
+### lib/armeabi-v7a/libapi_esportes.so
+/home/ubuntu/nuvixlegacy_analysis/raw/lib/armeabi-v7a/libapi_esportes.so: ELF 32-bit LSB shared object, ARM, EABI5 version 1 (SYSV), dynamically linked, BuildID[sha1]=3a0b7d9271019331daf1d721fba2ee164f77fdf7, stripped
+  Class:                             ELF32
+  Type:                              DYN (Shared object file)
+  Machine:                           ARM
+  Entry point address:               0x0
+needed:
+ 0x00000001 (NEEDED)                     Shared library: [liblog.so]
+ 0x00000001 (NEEDED)                     Shared library: [libc++_shared.so]
+ 0x00000001 (NEEDED)                     Shared library: [libm.so]
+ 0x00000001 (NEEDED)                     Shared library: [libdl.so]
+ 0x00000001 (NEEDED)                     Shared library: [libc.so]
+exported symbols:
+_Z13base64_decodeRKNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE
+Java_com_diegodev_apidesportes_jogos_callback_na_ae
+Java_com_diegodev_apidesportes_jogos_callback_na_verificarUrlNativa
+### lib/armeabi-v7a/libc++_shared.so
+/home/ubuntu/nuvixlegacy_analysis/raw/lib/armeabi-v7a/libc++_shared.so: ELF 32-bit LSB shared object, ARM, EABI5 version 1 (SYSV), dynamically linked, BuildID[sha1]=4dcbebec34af5743a8ca1c37483a5c82c8f665e4, stripped
+  Class:                             ELF32
+  Type:                              DYN (Shared object file)
+  Machine:                           ARM
+  Entry point address:               0x0
+needed:
+ 0x00000001 (NEEDED)                     Shared library: [libc.so]
+ 0x00000001 (NEEDED)                     Shared library: [libm.so]
+ 0x00000001 (NEEDED)                     Shared library: [libdl.so]
+exported symbols:
+_ZNSt6__ndk18to_charsEPcS0_eNS_12chars_formatE
+_ZNSt6__ndk113basic_filebufIcNS_11char_traitsIcEEE5imbueERKNS_6localeE
+_ZNKSt6__ndk16locale9use_facetERNS0_2idE
+_ZNSt6__ndk13pmr28unsynchronized_pool_resource12__adhoc_pool13__do_allocateEPNS0_15memory_resourceEjj
+_ZNSt6__ndk113basic_istreamIwNS_11char_traitsIwEEE3getEv
+_ZNKSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE4copyEPcjj
+_ZNSt6__ndk18valarrayIjEC2Ej
+_ZNKSt6__ndk18numpunctIcE11do_truenameEv
+_ZNSt6__ndk117__widen_from_utf8ILj16EED1Ev
+_ZNSt6__ndk113basic_istreamIcNS_11char_traitsIcEEE7getlineEPci
+_ZNSt6__ndk113basic_istreamIwNS_11char_traitsIwEEEC2EPNS_15basic_streambufIwS2_EE
+_ZNKSt6__ndk114__codecvt_utf8IwE11do_encodingEv
+_ZNSt6__ndk19__num_getIcE19__stage2_float_prepERNS_8ios_baseEPcRcS5_
+_ZNSt6__ndk113basic_istreamIcNS_11char_traitsIcEEErsEPFRS3_S4_E
+_ZNKSt6__ndk18time_getIcNS_19istreambuf_iteratorIcNS_11char_traitsIcEEEEE13__get_12_hourERiRS4_S4_RjRKNS_5ctypeIcEE
+_ZNSt6__ndk113basic_ostreamIcNS_11char_traitsIcEEElsEPKv
+_ZNKSt6__ndk115__codecvt_utf16IDiLb1EE9do_lengthER9mbstate_tPKcS5_j
+_ZNSt6__ndk18__sp_mut6unlockEv
+_ZNSt6__ndk112strstreambufC2EPhiS1_
+_ZNSt12length_errorD1Ev
+_ZNKSt6__ndk14__fs10filesystem4path9__compareENS_17basic_string_viewIcNS_11char_traitsIcEEEE
+_ZNSt6__ndk112system_errorC1ENS_10error_codeE
+_ZNSt6__ndk16localeC2ERKS0_S2_i
+_ZNKSt6__ndk115__codecvt_utf16IwLb0EE13do_max_lengthEv
+_ZNKSt6__ndk115__codecvt_utf16IDsLb0EE10do_unshiftER9mbstate_tPcS4_RS4_
+_ZNSt6__ndk14__fs10filesystem11__canonicalERKNS1_4pathEPNS_10error_codeE
+_ZNSt6__ndk18__rs_getEv
+_ZNSt6__ndk113basic_ostreamIwNS_11char_traitsIwEEEC2EPNS_15basic_streambufIwS2_EE
+_ZNKSt6__ndk18time_getIcNS_19istreambuf_iteratorIcNS_11char_traitsIcEEEEE11__get_monthERiRS4_S4_RjRKNS_5ctypeIcEE
+_ZNSt6__ndk111regex_errorC1ENS_15regex_constants10error_typeE
+_ZNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE21__grow_by_and_replaceEjjjjjjPKc
+_ZNSt6__ndk15stoulERKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPji
+_ZNKSt6__ndk15ctypeIwE10do_scan_isEmPKwS3_
+_ZNSt6__ndk14__fs10filesystem28recursive_directory_iteratorC2ERKNS1_4pathENS1_17directory_optionsEPNS_10error_codeE
+_ZNSt11logic_errorD1Ev
+_ZNKSt6__ndk18time_getIcNS_19istreambuf_iteratorIcNS_11char_traitsIcEEEEE10__get_yearERiRS4_S4_RjRKNS_5ctypeIcEE
+_ZNSt6__ndk15mutexD1Ev
+_ZNSt6__ndk115basic_streambufIwNS_11char_traitsIwEEEaSERKS3_
+_ZNKSt6__ndk14__fs10filesystem28recursive_directory_iterator13__dereferenceEv
+_ZNKSt6__ndk114collate_bynameIcE12do_transformEPKcS3_
+_ZNSt15underflow_errorD0Ev
+_ZNSt6__ndk113basic_istreamIcNS_11char_traitsIcEEE5ungetEv
+_ZNSt6__ndk19to_stringEd
+_ZNSt6__ndk115system_categoryEv
+_ZNSt6__ndk115basic_streambufIcNS_11char_traitsIcEEE4setpEPcS4_
+_ZNSt6__ndk113basic_istreamIwNS_11char_traitsIwEEE7getlineEPwi
+_ZNKSt6__ndk15ctypeIwE8do_widenEc
+_ZNSt6__ndk15stoldERKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPj
+_ZNSt6__ndk19to_stringEe
+_ZNKSt6__ndk17codecvtIDic9mbstate_tE13do_max_lengthEv
+_ZNSt6__ndk112strstreambufC2EPKai
+_ZNKSt11logic_error4whatEv
+_ZdaPvRKSt9nothrow_t
+_ZNSt6__ndk111__call_onceERVmPvPFvS2_E
+_ZNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6__initEPKcj
+_ZNSt6__ndk15stollERKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPji
+_ZNSt6__ndk19to_stringEf
+_ZNSt6__ndk116__narrow_to_utf8ILj16EED0Ev
+_ZNSt13runtime_errorD2Ev
+_ZNSt6__ndk19to_stringEi
+### lib/armeabi-v7a/libnative.so
+/home/ubuntu/nuvixlegacy_analysis/raw/lib/armeabi-v7a/libnative.so: ELF 32-bit LSB shared object, ARM, EABI5 version 1 (SYSV), dynamically linked, BuildID[sha1]=9fe3b60d83331a4bbc4f32c12b3c343519c1b040, stripped
+  Class:                             ELF32
+  Type:                              DYN (Shared object file)
+  Machine:                           ARM
+  Entry point address:               0x0
+needed:
+ 0x00000001 (NEEDED)                     Shared library: [liblog.so]
+ 0x00000001 (NEEDED)                     Shared library: [libc++_shared.so]
+ 0x00000001 (NEEDED)                     Shared library: [libm.so]
+ 0x00000001 (NEEDED)                     Shared library: [libdl.so]
+ 0x00000001 (NEEDED)                     Shared library: [libc.so]
+exported symbols:
+_Z22extrairPacoteDoApkPathRKNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE
+_ZNSt6__ndk16vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS4_IS6_EEE16__init_with_sizeB8ne210000IPKS6_SB_EEvT_T0_j
+Java_com_legacy_prime_callback_na_testTcp
+Java_com_legacy_prime_callback_na_getRealApkPath
+_ZNSt6__ndk114basic_ifstreamIcNS_11char_traitsIcEEED1Ev
+Java_com_legacy_prime_callback_na_ae
+Java_com_legacy_prime_callback_na_txt
+base64_decode
+Java_com_legacy_prime_callback_na_ei
+Java_com_legacy_prime_callback_na_ou
+Java_com_legacy_prime_callback_na_isValidApkPath
+Java_com_legacy_prime_callback_na_ver
+_ZNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE25__init_copy_ctor_externalEPKcj
+### lib/x86/libandroidx.graphics.path.so
+/home/ubuntu/nuvixlegacy_analysis/raw/lib/x86/libandroidx.graphics.path.so: ELF 32-bit LSB shared object, Intel 80386, version 1 (SYSV), dynamically linked, BuildID[sha1]=56b3f97a7efb05fc89674cf68f6c27847a93860b, stripped
+  Class:                             ELF32
+  Type:                              DYN (Shared object file)
+  Machine:                           Intel 80386
+  Entry point address:               0x0
+needed:
+ 0x00000001 (NEEDED)                     Shared library: [libm.so]
+ 0x00000001 (NEEDED)                     Shared library: [libdl.so]
+ 0x00000001 (NEEDED)                     Shared library: [libc.so]
+exported symbols:
+JNI_OnLoad@@LIBANDROIDX.GRAPHICS.PATH
+### lib/x86/libapi_esportes.so
+/home/ubuntu/nuvixlegacy_analysis/raw/lib/x86/libapi_esportes.so: ELF 32-bit LSB shared object, Intel 80386, version 1 (SYSV), dynamically linked, BuildID[sha1]=8dd47025f7ed194e8b34e55005965ace5bf98fb8, stripped
+  Class:                             ELF32
+  Type:                              DYN (Shared object file)
+  Machine:                           Intel 80386
+  Entry point address:               0x0
+needed:
+ 0x00000001 (NEEDED)                     Shared library: [liblog.so]
+ 0x00000001 (NEEDED)                     Shared library: [libc++_shared.so]
+ 0x00000001 (NEEDED)                     Shared library: [libm.so]
+ 0x00000001 (NEEDED)                     Shared library: [libdl.so]
+ 0x00000001 (NEEDED)                     Shared library: [libc.so]
+exported symbols:
+_Z13base64_decodeRKNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE
+Java_com_diegodev_apidesportes_jogos_callback_na_ae
+Java_com_diegodev_apidesportes_jogos_callback_na_verificarUrlNativa
+### lib/x86/libc++_shared.so
+/home/ubuntu/nuvixlegacy_analysis/raw/lib/x86/libc++_shared.so: ELF 32-bit LSB shared object, Intel 80386, version 1 (SYSV), dynamically linked, BuildID[sha1]=31f820ad49515e490ef8d3fb596f4c81bef5e0b3, stripped
+  Class:                             ELF32
+  Type:                              DYN (Shared object file)
+  Machine:                           Intel 80386
+  Entry point address:               0x0
+needed:
+ 0x00000001 (NEEDED)                     Shared library: [libc.so]
+ 0x00000001 (NEEDED)                     Shared library: [libm.so]
+ 0x00000001 (NEEDED)                     Shared library: [libdl.so]
+exported symbols:
+_ZNKSt12bad_any_cast4whatEv
+_ZNKSt6__ndk112ctype_bynameIcE10do_toupperEc
+_ZNSt6__ndk16__sortIRNS_6__lessIxxEEPxEEvT0_S5_T_
+_ZNKSt6__ndk115error_condition7messageEv
+_ZNSt6__ndk16gslice6__initEj
+_ZNSt6__ndk15stoulERKNS_12basic_stringIwNS_11char_traitsIwEENS_9allocatorIwEEEEPji
+_ZNKSt6__ndk15ctypeIwE9do_narrowEwc
+_ZNKSt6__ndk115__codecvt_utf16IDiLb1EE10do_unshiftER9mbstate_tPcS4_RS4_
+_ZNSt6__ndk112ctype_bynameIcEC1EPKcj
+_ZNSt6__ndk119__thread_local_dataEv
+_ZNKSt6__ndk117moneypunct_bynameIwLb0EE14do_curr_symbolEv
+_ZNSt6__ndk16__sortIRNS_6__lessImmEEPmEEvT0_S5_T_
+_ZNSt6__ndk13pmr28unsynchronized_pool_resource11do_allocateEjj
+_ZNSt6__ndk18ios_base5iwordEi
+_ZNSt6__ndk113basic_istreamIcNS_11char_traitsIcEEED2Ev
+_ZNSt6__ndk14__fs10filesystem17__last_write_timeERKNS1_4pathENS_6chrono10time_pointINS1_16_FilesystemClockENS5_8durationIxNS_5ratioILx1ELx1000000000EEEEEEEPNS_10error_codeE
+_ZNKSt6__ndk119bad_expected_accessIvE4whatEv
+_ZNSt6__ndk119__shared_mutex_base4lockEv
+__cxa_current_exception_type
+_ZNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6insertEjPKcj
+_ZNSt6__ndk121recursive_timed_mutexD2Ev
+_ZNSt6__ndk115basic_streambufIwNS_11char_traitsIwEEEC2Ev
+_ZNSt6__ndk18valarrayIjED2Ev
+_ZNSt6__ndk18ios_base4swapERS0_
+_ZNKSt6__ndk114__codecvt_utf8IDsE13do_max_lengthEv
+_ZNSt11logic_errorD1Ev
+_ZNSt6__ndk16stoullERKNS_12basic_stringIwNS_11char_traitsIwEENS_9allocatorIwEEEEPji
+_ZNSt6__ndk115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEC2EOS5_
+_ZNKSt6__ndk17codecvtIcc9mbstate_tE9do_lengthERS1_PKcS5_j
+_ZNKSt6__ndk17codecvtIDic9mbstate_tE9do_lengthERS1_PKcS5_j
+_ZNKSt6__ndk114__codecvt_utf8IwE10do_unshiftER9mbstate_tPcS4_RS4_
+__cxa_init_primary_exception
+_ZNSt6__ndk15stoldERKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPj
+_ZNKSt6__ndk117moneypunct_bynameIwLb1EE13do_pos_formatEv
+_ZNKSt6__ndk14__fs10filesystem4path16__root_directoryEv
+_ZNSt10bad_typeidD0Ev
+_ZNSt6__ndk119__shared_mutex_base15try_lock_sharedEv
+_ZNKSt6__ndk110moneypunctIcLb0EE16do_positive_signEv
+_ZNKSt6__ndk15ctypeIcE9do_narrowEPKcS3_cPc
+_ZNSt6__ndk17codecvtIwc9mbstate_tEC1EPKcj
+_ZSt10unexpectedv
+_ZNSt6__ndk115basic_streambufIwNS_11char_traitsIwEEE5gbumpEi
+_ZNKSt6__ndk112basic_stringIwNS_11char_traitsIwEENS_9allocatorIwEEE7compareEjjPKw
+_ZNSt6__ndk15stollERKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPji
+_ZNKSt6__ndk114collate_bynameIwE12do_transformEPKwS3_
+_ZNSt6__ndk112strstreambuf4swapERS0_
+_ZNKSt6__ndk13pmr28unsynchronized_pool_resource22__log2_pool_block_sizeEi
+_ZNSt12experimental19bad_optional_accessD0Ev
+_ZNKSt6__ndk112ctype_bynameIwE11do_scan_notEmPKwS3_
+_ZNSt6__ndk115numpunct_bynameIwED2Ev
+_ZNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC2ERKS5_jjRKS4_
+_ZNKSt6__ndk18time_getIwNS_19istreambuf_iteratorIwNS_11char_traitsIwEEEEE11do_get_yearES4_S4_RNS_8ios_baseERjP2tm
+_ZNKSt6__ndk18messagesIcE8do_closeEi
+_ZNSt9exceptionD0Ev
+_ZNSt14overflow_errorD2Ev
+_ZNSt6__ndk112basic_stringIwNS_11char_traitsIwEENS_9allocatorIwEEEC1ERKS5_RKS4_
+_ZnajRKSt9nothrow_t
+_ZNSt6__ndk115basic_streambufIcNS_11char_traitsIcEEE6xsgetnEPci
+_ZNKSt6__ndk120__time_get_c_storageIcE7__weeksEv
+_ZNSt6__ndk14__fs10filesystem18directory_iterator11__incrementEPNS_10error_codeE
+### lib/x86/libnative.so
+/home/ubuntu/nuvixlegacy_analysis/raw/lib/x86/libnative.so: ELF 32-bit LSB shared object, Intel 80386, version 1 (SYSV), dynamically linked, BuildID[sha1]=246c3ec04e736aa7f14a4c82328a91bf9c6d3aa2, stripped
+  Class:                             ELF32
+  Type:                              DYN (Shared object file)
+  Machine:                           Intel 80386
+  Entry point address:               0x0
+needed:
+ 0x00000001 (NEEDED)                     Shared library: [liblog.so]
+ 0x00000001 (NEEDED)                     Shared library: [libc++_shared.so]
+ 0x00000001 (NEEDED)                     Shared library: [libm.so]
+ 0x00000001 (NEEDED)                     Shared library: [libdl.so]
+ 0x00000001 (NEEDED)                     Shared library: [libc.so]
+exported symbols:
+_Z22extrairPacoteDoApkPathRKNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE
+_ZNSt6__ndk16vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS4_IS6_EEE16__init_with_sizeB8ne210000IPKS6_SB_EEvT_T0_j
+Java_com_legacy_prime_callback_na_testTcp
+Java_com_legacy_prime_callback_na_getRealApkPath
+_ZNSt6__ndk114basic_ifstreamIcNS_11char_traitsIcEEED1Ev
+Java_com_legacy_prime_callback_na_ae
+Java_com_legacy_prime_callback_na_txt
+base64_decode
+Java_com_legacy_prime_callback_na_ei
+Java_com_legacy_prime_callback_na_ou
+Java_com_legacy_prime_callback_na_isValidApkPath
+Java_com_legacy_prime_callback_na_ver
+_ZNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE25__init_copy_ctor_externalEPKcj
+### lib/x86_64/libandroidx.graphics.path.so
+/home/ubuntu/nuvixlegacy_analysis/raw/lib/x86_64/libandroidx.graphics.path.so: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, BuildID[sha1]=f3e82b0a78f4c567cca77fe6c132199d806987d1, stripped
+  Class:                             ELF64
+  Type:                              DYN (Shared object file)
+  Machine:                           Advanced Micro Devices X86-64
+  Entry point address:               0x0
+needed:
+ 0x0000000000000001 (NEEDED)             Shared library: [libm.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libdl.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libc.so]
+exported symbols:
+JNI_OnLoad@@LIBANDROIDX.GRAPHICS.PATH
+### lib/x86_64/libapi_esportes.so
+/home/ubuntu/nuvixlegacy_analysis/raw/lib/x86_64/libapi_esportes.so: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, BuildID[sha1]=ed41f0516afcfbea63c545ec1bb2b6d3daf67317, stripped
+  Class:                             ELF64
+  Type:                              DYN (Shared object file)
+  Machine:                           Advanced Micro Devices X86-64
+  Entry point address:               0x0
+needed:
+ 0x0000000000000001 (NEEDED)             Shared library: [liblog.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libc++_shared.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libm.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libdl.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libc.so]
+exported symbols:
+_Z13base64_decodeRKNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE
+Java_com_diegodev_apidesportes_jogos_callback_na_ae
+Java_com_diegodev_apidesportes_jogos_callback_na_verificarUrlNativa
+### lib/x86_64/libc++_shared.so
+/home/ubuntu/nuvixlegacy_analysis/raw/lib/x86_64/libc++_shared.so: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, BuildID[sha1]=3013104c45517f8ad33d82df55191b7cec21204d, stripped
+  Class:                             ELF64
+  Type:                              DYN (Shared object file)
+  Machine:                           Advanced Micro Devices X86-64
+  Entry point address:               0x0
+needed:
+ 0x0000000000000001 (NEEDED)             Shared library: [libc.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libm.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libdl.so]
+exported symbols:
+_ZNSt6__ndk16__itoa8__u32toaEjPc
+_ZNSt6__ndk17promiseIvEC1Ev
+_ZNSt6__ndk113basic_ostreamIwNS_11char_traitsIwEEElsEj
+_ZNKSt6__ndk17codecvtIDic9mbstate_tE6do_outERS1_PKDiS5_RS5_PcS7_RS7_
+_ZNSt6__ndk18numpunctIwEC1Em
+_ZNKSt6__ndk17num_getIcNS_19istreambuf_iteratorIcNS_11char_traitsIcEEEEE6do_getES4_S4_RNS_8ios_baseERjRx
+_ZNKSt6__ndk18numpunctIwE11do_truenameEv
+_ZNSt6__ndk113basic_istreamIwNS_11char_traitsIwEEED1Ev
+_ZNSt6__ndk113basic_ostreamIwNS_11char_traitsIwEEElsEl
+_ZNKSt6__ndk17num_getIcNS_19istreambuf_iteratorIcNS_11char_traitsIcEEEEE6do_getES4_S4_RNS_8ios_baseERjRy
+_ZNSt6__ndk113basic_ostreamIwNS_11char_traitsIwEEElsEm
+_ZNKSt6__ndk115__codecvt_utf16IwLb0EE10do_unshiftER9mbstate_tPcS4_RS4_
+_ZNSt6__ndk18numpunctIcEC2Em
+_ZNSt6__ndk114codecvt_bynameIDic9mbstate_tED1Ev
+_ZNSt6__ndk114__shared_count16__release_sharedEv
+_ZNKSt6__ndk18time_getIwNS_19istreambuf_iteratorIwNS_11char_traitsIwEEEEE18__get_day_year_numERiRS4_S4_RjRKNS_5ctypeIwEE
+_ZNSt6__ndk16locale2id5__getEv
+_ZNKSt6__ndk17codecvtIcc9mbstate_tE6do_outERS1_PKcS5_RS5_PcS7_RS7_
+_ZNKSt6__ndk115__codecvt_utf16IDsLb1EE11do_encodingEv
+_ZNSt6__ndk113basic_ostreamIcNS_11char_traitsIcEEE5tellpEv
+_ZNSt11range_errorD0Ev
+_ZNSt6__ndk115basic_streambufIwNS_11char_traitsIwEEE10pubseekoffExNS_8ios_base7seekdirEj
+_ZNKSt6__ndk19money_putIcNS_19ostreambuf_iteratorIcNS_11char_traitsIcEEEEE6do_putES4_bRNS_8ios_baseEcg
+_ZNKSt6__ndk120__time_get_c_storageIwE3__XEv
+_ZTv0_n24_NSt6__ndk113basic_ostreamIwNS_11char_traitsIwEEED1Ev
+_ZNKSt6__ndk115__codecvt_utf16IDsLb1EE5do_inER9mbstate_tPKcS5_RS5_PDsS7_RS7_
+_ZNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6appendEPKcm
+_ZNSt6__ndk113basic_ostreamIwNS_11char_traitsIwEEElsEs
+_ZNKSt6__ndk115__codecvt_utf16IDsLb0EE9do_lengthER9mbstate_tPKcS5_m
+_ZNSt6__ndk112strstreambufC1EPKcl
+__cxa_vec_delete
+__cxa_decrement_exception_refcount
+_ZNSt6__ndk13pmr15memory_resourceD0Ev
+_ZNSt6__ndk113basic_ostreamIwNS_11char_traitsIwEEElsEt
+_ZNKSt6__ndk120__time_get_c_storageIcE7__weeksEv
+_ZNSt10bad_typeidC1Ev
+_ZNSt6__ndk112basic_stringIwNS_11char_traitsIwEENS_9allocatorIwEEED2Ev
+_ZNKSt6__ndk112basic_stringIwNS_11char_traitsIwEENS_9allocatorIwEEE7compareEmmPKwm
+_ZNSt6__ndk113basic_ostreamIwNS_11char_traitsIwEEElsEPFRNS_9basic_iosIwS2_EES6_E
+_ZNKSt6__ndk114collate_bynameIwE12do_transformEPKwS3_
+_ZNSt6__ndk110__time_getC2EPKc
+_ZNSt6__ndk131__arrive_barrier_algorithm_baseEPNS_24__barrier_algorithm_baseEh
+_ZNSt6__ndk113basic_ostreamIwNS_11char_traitsIwEEElsEx
+_ZNKSt6__ndk117moneypunct_bynameIwLb0EE16do_negative_signEv
+_ZNKSt6__ndk112ctype_bynameIwE11do_scan_notEmPKwS3_
+_ZNSt6__ndk113basic_ostreamIwNS_11char_traitsIwEEElsEy
+_ZNSt6__ndk18numpunctIcED0Ev
+_ZNSt6__ndk17codecvtIDiDu9mbstate_tED2Ev
+_ZNSt6__ndk111timed_mutexD1Ev
+_ZNKSt6__ndk118__time_get_storageIwE15__do_date_orderEv
+_ZNKSt6__ndk115__codecvt_utf16IDsLb0EE5do_inER9mbstate_tPKcS5_RS5_PDsS7_RS7_
+_ZNKSt18bad_variant_access4whatEv
+_ZNSt6__ndk18ios_base5iwordEi
+_ZNSt6__ndk19basic_iosIwNS_11char_traitsIwEEED0Ev
+_ZNKSt6__ndk15ctypeIwE10do_tolowerEw
+_ZSt10unexpectedv
+_ZNSt6__ndk118shared_timed_mutex4lockEv
+_ZNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6insertEmRKS5_mm
+_ZNSt6__ndk113basic_istreamIcNS_11char_traitsIcEEE6ignoreEli
+_ZNKSt6__ndk18time_getIwNS_19istreambuf_iteratorIwNS_11char_traitsIwEEEEE13__get_12_hourERiRS4_S4_RjRKNS_5ctypeIwEE
+### lib/x86_64/libnative.so
+/home/ubuntu/nuvixlegacy_analysis/raw/lib/x86_64/libnative.so: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, BuildID[sha1]=8a5e4bfbdb98808b2c2e1c9f14c2ce45ebcfb5e8, stripped
+  Class:                             ELF64
+  Type:                              DYN (Shared object file)
+  Machine:                           Advanced Micro Devices X86-64
+  Entry point address:               0x0
+needed:
+ 0x0000000000000001 (NEEDED)             Shared library: [liblog.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libc++_shared.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libm.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libdl.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libc.so]
+exported symbols:
+_Z22extrairPacoteDoApkPathRKNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE
+_ZNSt6__ndk16vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS4_IS6_EEE16__init_with_sizeB8ne210000IPKS6_SB_EEvT_T0_m
+Java_com_legacy_prime_callback_na_testTcp
+Java_com_legacy_prime_callback_na_getRealApkPath
+_ZNSt6__ndk114basic_ifstreamIcNS_11char_traitsIcEEED1Ev
+Java_com_legacy_prime_callback_na_ae
+Java_com_legacy_prime_callback_na_txt
+base64_decode
+Java_com_legacy_prime_callback_na_ei
+Java_com_legacy_prime_callback_na_ou
+Java_com_legacy_prime_callback_na_isValidApkPath
+Java_com_legacy_prime_callback_na_ver
+_ZNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE25__init_copy_ctor_externalEPKcm

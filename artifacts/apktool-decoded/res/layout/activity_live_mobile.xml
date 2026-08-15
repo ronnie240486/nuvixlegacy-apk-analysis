@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/theme_bg" android:background="@drawable/bg_dark" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.legacy.prime.Bacground.BackgroundView android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/_10sdp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/_15sdp" android:paddingEnd="@dimen/_15sdp">
+        <RelativeLayout android:id="@id/rl_top" android:layout_width="fill_parent" android:layout_height="@dimen/_20sdp">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView android:textSize="@dimen/_8sdp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TOTAL/" />
+                <TextView android:textSize="@dimen/_8sdp" android:textColor="@color/white" android:id="@id/totalseries" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:layout_marginStart="@dimen/_2sdp" />
+            </LinearLayout>
+            <ImageView android:id="@id/iv_back_page" android:background="@drawable/focused_img_selector" android:padding="@dimen/_5sdp" android:focusable="true" android:focusableInTouchMode="false" android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp" android:src="@drawable/ic_player_back" android:scaleType="centerCrop" android:layout_centerVertical="true" android:contentDescription="@string/todo" android:layout_marginEnd="@dimen/_10sdp" android:layout_alignParentStart="true" app:tint="@color/white" />
+            <ImageView android:id="@id/iv_app_logo" android:padding="@dimen/_5sdp" android:visibility="gone" android:layout_width="@dimen/_30sdp" android:layout_height="@dimen/_30sdp" android:src="@drawable/list_channels" android:layout_centerVertical="true" android:contentDescription="@string/todo" android:layout_toEndOf="@id/iv_back_page" app:tint="@color/white" />
+            <TextView android:textSize="@dimen/_11ssp" android:textColor="@color/white" android:id="@id/tv_page_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_tv_home" android:layout_centerVertical="true" android:layout_marginStart="@dimen/_10sdp" android:layout_toEndOf="@id/iv_app_logo" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <RelativeLayout android:background="@drawable/edt_focused" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/_2sdp" android:backgroundTint="#9effffff">
+                    <androidx.appcompat.widget.AppCompatEditText android:textSize="@dimen/_11ssp" android:textColor="@color/white" android:textColorHint="@color/white" android:id="@id/edt_search" android:background="@drawable/focused_edt" android:paddingTop="@dimen/_5sdp" android:paddingBottom="@dimen/_5sdp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_1sdp" android:hint="@string/search_categories" android:maxLines="1" android:drawablePadding="@dimen/_3sdp" android:layout_centerVertical="true" android:inputType="text" android:privateImeOptions="horizontalAlignment=right" android:imeOptions="actionSearch|flagNoFullscreen" android:drawableStart="@drawable/ic_search" android:paddingStart="@dimen/_3sdp" android:paddingEnd="@dimen/_3sdp" android:importantForAutofill="no" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/iv_search" android:background="@drawable/focused_movie" android:layout_width="fill_parent" android:layout_height="@dimen/_23sdp">
+                    <ImageView android:layout_gravity="center" android:background="@drawable/focused_img_selector_color" android:focusable="true" android:focusableInTouchMode="false" android:layout_width="@dimen/_15sdp" android:layout_height="@dimen/_15sdp" android:src="@drawable/ic_search" android:contentDescription="@string/todo" android:layout_marginStart="@dimen/_3sdp" app:tint="@color/white" />
+                    <TextView android:textSize="@dimen/_7ssp" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/txtbuscar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/_10sdp" />
+                </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_cat" android:paddingBottom="@dimen/_20sdp" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/_5sdp" />
+            </LinearLayout>
+            <View android:background="@drawable/bg_line" android:layout_width="@dimen/_1sdp" android:layout_height="fill_parent" android:layout_marginEnd="@dimen/_5sdp" />
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.8">
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/rv" android:paddingBottom="16.0dip" android:focusable="true" android:focusableInTouchMode="true" android:scrollbars="vertical" android:clipToPadding="false" android:layoutAnimation="@anim/layout_animation_from_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <FrameLayout android:id="@id/fl_empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="?actionBarSize" />
+                <androidx.nemosofts.view.ProgressBarView android:id="@id/pb" android:visibility="gone" android:layout_width="@dimen/_40sdp" android:layout_height="@dimen/_40sdp" android:indeterminate="true" android:layout_centerInParent="true" app:pb_color="#ffffee44" app:pb_colors="@array/progress_colors" app:pb_max_sweep_angle="300" app:pb_min_sweep_angle="10" app:pb_rotation_speed="1.0" app:pb_stroke_width="@dimen/_2sdp" app:pb_sweep_speed="1.0" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/infochannel" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="#61000000" android:padding="@dimen/_2sdp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp" android:layout_marginEnd="@dimen/_20sdp" android:layout_alignParentEnd="true">
+            <ImageView android:background="@drawable/loaddown_icon" android:layout_width="@dimen/_11sdp" android:layout_height="@dimen/_8sdp" />
+            <com.legacy.prime.custom.RandomSpeedTextView android:textSize="@dimen/_6sdp" android:textColor="@color/hometextcolor" android:id="@id/txtKabaites" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="136KB/S" android:layout_marginStart="@dimen/_3sdp" />
+        </LinearLayout>
+        <RelativeLayout android:background="#cf050505" android:layout_width="fill_parent" android:layout_height="@dimen/_70sdp" android:layout_alignParentBottom="true">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/_65sdp" android:layout_centerInParent="true" android:layout_marginEnd="@dimen/_50sdp">
+                <ImageView android:layout_gravity="center" android:id="@id/imglogo" android:layout_width="@dimen/_40sdp" android:layout_height="@dimen/_35sdp" android:scaleType="centerInside" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/_20sdp">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/_10sdp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/txtnamechanel" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                        <TextView android:textSize="@dimen/_9sdp" android:textColor="@color/hometextcolor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2025-01-24" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_3sdp">
+                        <TextView android:textSize="@dimen/_7sdp" android:textStyle="bold" android:textColor="@color/ns_classic_primary" android:id="@id/txtAtual" android:layout_width="@dimen/_200sdp" android:layout_height="wrap_content" android:text="Atual: Sem Informacoes(00:00)" android:maxLines="1" />
+                        <Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                        <TextView android:textSize="@dimen/_7sdp" android:textColor="@color/hometextcolor" android:gravity="end" android:id="@id/txtNext" android:layout_width="@dimen/_200sdp" android:layout_height="wrap_content" android:text="Proximo: Sem Informacoes(00:00)" android:maxLines="1" android:paddingEnd="@dimen/_20sdp" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_8sdp">
+                        <TextView android:textSize="@dimen/_8sdp" android:textColor="@color/hometextcolor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Buffer" />
+                        <SeekBar android:id="@id/seekBar" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="@dimen/_2sdp" android:max="100" android:progress="0" android:progressDrawable="@drawable/custom_seekbar_progress" android:minHeight="@dimen/_1sdp" android:thumb="@drawable/thumb_circle" android:layout_weight="1.0" android:layout_marginStart="@dimen/_5sdp" android:backgroundTint="@color/white" />
+                        <TextView android:textSize="@dimen/_8sdp" android:textColor="@color/start_atv" android:id="@id/txtSekkbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+                        <TextView android:textSize="@dimen/_8sdp" android:textColor="@color/hometextcolor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="/100" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

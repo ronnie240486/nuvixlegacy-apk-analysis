@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="@dimen/_220sdp" android:layout_height="@dimen/_130sdp">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="#ff00030b" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:background="#ff000310" android:layout_width="fill_parent" android:layout_height="@dimen/_22sdp">
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/conf_episodio" android:background="@drawable/focused_item_live" android:padding="@dimen/_1sdp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <TextView android:textSize="@dimen/_7sdp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="EPISÓDIO" android:layout_marginStart="@dimen/_5sdp" android:layout_marginEnd="@dimen/_2sdp" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/conf_video" android:background="@drawable/focused_item_live" android:padding="@dimen/_1sdp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <TextView android:textSize="@dimen/_7sdp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="VIDEO" android:layout_marginStart="@dimen/_5sdp" android:layout_marginEnd="@dimen/_2sdp" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@drawable/bg_view" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="1.0dip" android:layout_marginStart="@dimen/_10sdp" android:layout_marginEnd="@dimen/_10sdp" />
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/linear_episodios" android:layout_width="@dimen/_90sdp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_20sdp">
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/ll_skip_next" android:background="@drawable/focused_item_setting" android:padding="@dimen/_1sdp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/_5sdp" android:paddingEnd="@dimen/_5sdp">
+                    <ImageView android:layout_width="@dimen/_15sdp" android:layout_height="@dimen/_15sdp" android:src="@drawable/ic_skip_next" android:contentDescription="@string/todo" app:tint="@color/white" />
+                    <TextView android:textSize="@dimen/_7sdp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Próximo Episódio" android:layout_marginStart="@dimen/_5sdp" android:layout_marginEnd="@dimen/_2sdp" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/list_episodios" android:background="@drawable/focused_item_setting" android:padding="@dimen/_1sdp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:paddingStart="@dimen/_5sdp" android:paddingEnd="@dimen/_5sdp">
+                    <ImageView android:layout_width="@dimen/_15sdp" android:layout_height="@dimen/_15sdp" android:src="@drawable/ic_playlist" android:contentDescription="@string/todo" app:tint="@color/white" />
+                    <TextView android:textSize="@dimen/_7sdp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Lista de  Episódio" android:layout_marginStart="@dimen/_5sdp" android:layout_marginEnd="@dimen/_2sdp" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/linear_video" android:visibility="gone" android:layout_width="@dimen/_90sdp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_20sdp">
+                <RelativeLayout android:layout_gravity="center" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageButton android:id="@id/buttonYes" android:background="@drawable/focused_item_setting" android:focusable="true" android:focusableInTouchMode="true" android:nextFocusLeft="@id/buttonNo" android:nextFocusRight="@id/buttonNo" android:layout_width="fill_parent" android:layout_height="@dimen/_17sdp" />
+                    <TextView android:textSize="@dimen/_7sdp" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Original" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_gravity="center" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp">
+                    <ImageButton android:id="@id/buttonNo" android:background="@drawable/focused_item_setting" android:focusable="true" android:focusableInTouchMode="true" android:nextFocusLeft="@id/buttonYes" android:nextFocusRight="@id/buttonYes" android:layout_width="fill_parent" android:layout_height="@dimen/_17sdp" android:layout_centerInParent="true" />
+                    <TextView android:textSize="@dimen/_7sdp" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tela cheia" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

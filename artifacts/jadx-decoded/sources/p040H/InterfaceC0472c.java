@@ -1,0 +1,12 @@
+package p040H;
+
+import p092Q.InterfaceC0831a;
+
+/* JADX INFO: renamed from: H.c */
+/* JADX INFO: compiled from: r8-map-id-3b0fe1fe3be310c6d55756f0e4e73dab92065bed65670a23f41d484dc89ae294 */
+/* JADX INFO: loaded from: classes.dex */
+public interface InterfaceC0472c {
+    void addOnTrimMemoryListener(InterfaceC0831a interfaceC0831a);
+
+    void removeOnTrimMemoryListener(InterfaceC0831a interfaceC0831a);
+}

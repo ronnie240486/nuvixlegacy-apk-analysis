@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/item_root" android:background="@drawable/focused_item_live" android:padding="12.0dip" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="80.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/ic_movie" android:scaleType="centerInside" />
+    <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Filmes" android:layout_marginStart="12.0dip" />
+</LinearLayout>

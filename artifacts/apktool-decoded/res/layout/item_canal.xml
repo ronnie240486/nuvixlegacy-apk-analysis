@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root" android:background="@drawable/focused_home" android:padding="@dimen/_3sdp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_3sdp" android:layout_marginBottom="@dimen/_3sdp" android:layout_marginStart="@dimen/_10sdp" android:layout_marginEnd="@dimen/_10sdp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/_10sdp">
+        <ImageView android:id="@id/logoCanal" android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp" android:src="@drawable/logo" android:scaleType="fitCenter" />
+        <TextView android:textSize="@dimen/_7sdp" android:textColor="@android:color/white" android:id="@id/nomeCanal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Canal X" android:layout_marginStart="@dimen/_5sdp" />
+    </LinearLayout>
+    <com.airbnb.lottie.LottieAnimationView android:layout_gravity="end" android:id="@id/loter_sound" android:visibility="gone" android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp" android:layout_marginEnd="@dimen/_10sdp" android:layout_alignParentEnd="true" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/sound" />
+</RelativeLayout>

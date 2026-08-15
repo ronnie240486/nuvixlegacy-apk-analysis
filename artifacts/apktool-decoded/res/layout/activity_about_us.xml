@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/theme_bg" android:background="@drawable/bg_dark" android:paddingTop="@dimen/_10sdp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/_15sdp" android:paddingEnd="@dimen/_15sdp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_top" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="@dimen/_5sdp" android:layout_weight="0.3">
+        <ImageView android:id="@id/iv_back_page" android:background="@drawable/focused_img_selector" android:padding="@dimen/_5sdp" android:focusable="true" android:focusableInTouchMode="false" android:layout_width="@dimen/_33sdp" android:layout_height="@dimen/_33sdp" android:src="@drawable/ic_player_back" android:scaleType="centerCrop" android:layout_centerVertical="true" android:contentDescription="@string/todo" android:layout_marginEnd="@dimen/_10sdp" android:layout_alignParentStart="true" app:tint="@color/white" />
+        <ImageView android:id="@id/iv_app_logo" android:padding="@dimen/_5sdp" android:layout_width="@dimen/_30sdp" android:layout_height="@dimen/_30sdp" android:src="@drawable/ic_information" android:layout_centerVertical="true" android:contentDescription="@string/todo" android:layout_toEndOf="@id/iv_back_page" app:tint="@color/white" />
+        <TextView android:textSize="@dimen/_11ssp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about" android:layout_centerVertical="true" android:layout_marginStart="@dimen/_10sdp" android:layout_toEndOf="@id/iv_app_logo" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:baselineAligned="false" android:layout_weight="2.0">
+        <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/_1sdp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/_10sdp" android:layout_marginEnd="@dimen/_10sdp">
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_card_sub" android:padding="@dimen/_10sdp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_2sdp" android:backgroundTint="@color/white">
+                    <ImageView android:id="@id/logo" android:layout_width="@dimen/_75sdp" android:layout_height="@dimen/_75sdp" android:src="@drawable/logo" android:contentDescription="@string/todo" app:hv_corner_radius_bottom_left="@dimen/_10sdp" app:hv_corner_radius_top_left="@dimen/_10sdp" />
+                    <View android:background="#12ffffff" android:layout_width="@dimen/_1sdp" android:layout_height="fill_parent" android:layout_marginStart="@dimen/_10sdp" android:layout_marginEnd="@dimen/_10sdp" android:backgroundTint="@color/white" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/_16ssp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/tv_app_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/app_name" android:textAlignment="viewStart" />
+                        <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/_12ssp" android:textColor="@color/white" android:id="@id/tv_app_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/love_this_app" android:maxLines="4" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+                    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_card_sub" android:paddingTop="@dimen/_5sdp" android:paddingBottom="@dimen/_5sdp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:layout_weight="1.0" android:backgroundTint="@color/white">
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <ImageView android:layout_gravity="center" android:padding="@dimen/_9sdp" android:layout_width="@dimen/_40sdp" android:layout_height="@dimen/_40sdp" android:src="@drawable/ic_building" android:contentDescription="@string/todo" android:layout_marginStart="@dimen/_5sdp" android:layout_marginEnd="@dimen/_5sdp" app:tint="@color/white" />
+                            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <TextView android:textSize="@dimen/_13ssp" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/company" android:textAlignment="viewStart" />
+                                <TextView android:textSize="@dimen/_12ssp" android:textColor="@color/white" android:id="@id/tv_company" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_1sdp" android:text="@string/app_name" android:textAlignment="viewStart" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <View android:background="#12ffffff" android:layout_width="fill_parent" android:layout_height="@dimen/_1sdp" android:layout_marginTop="@dimen/_5sdp" android:layout_marginBottom="@dimen/_5sdp" android:backgroundTint="@color/white" />
+                        <LinearLayout android:orientation="horizontal" android:id="@id/ll_email" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <ImageView android:layout_gravity="center" android:padding="@dimen/_10sdp" android:layout_width="@dimen/_40sdp" android:layout_height="@dimen/_40sdp" android:src="@drawable/ic_mail" android:contentDescription="@string/todo" android:layout_marginStart="@dimen/_5sdp" android:layout_marginEnd="@dimen/_5sdp" app:tint="@color/white" />
+                            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <TextView android:textSize="@dimen/_13ssp" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/email" android:textAlignment="viewStart" />
+                                <TextView android:textSize="@dimen/_12ssp" android:textColor="@color/white" android:id="@id/tv_email" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_1sdp" android:text="@string/app_name" android:textAlignment="viewStart" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <View android:background="#12ffffff" android:layout_width="fill_parent" android:layout_height="@dimen/_1sdp" android:layout_marginTop="@dimen/_5sdp" android:layout_marginBottom="@dimen/_5sdp" android:backgroundTint="@color/white" />
+                        <LinearLayout android:orientation="horizontal" android:id="@id/ll_domain" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <ImageView android:layout_gravity="center" android:padding="@dimen/_10sdp" android:layout_width="@dimen/_40sdp" android:layout_height="@dimen/_40sdp" android:src="@drawable/ic_global" android:contentDescription="@string/todo" android:layout_marginStart="@dimen/_5sdp" android:layout_marginEnd="@dimen/_5sdp" app:tint="@color/white" />
+                            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <TextView android:textSize="@dimen/_13ssp" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/website" android:textAlignment="viewStart" />
+                                <TextView android:textSize="@dimen/_12ssp" android:textColor="@color/white" android:id="@id/tv_website" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_1sdp" android:text="@string/app_name" android:textAlignment="viewStart" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View android:layout_width="@dimen/_10sdp" android:layout_height="wrap_content" />
+                    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_card_sub" android:paddingTop="@dimen/_5sdp" android:paddingBottom="@dimen/_5sdp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:layout_weight="1.0" android:backgroundTint="@color/white">
+                        <LinearLayout android:orientation="horizontal" android:id="@id/ll_contact" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <ImageView android:layout_gravity="center" android:padding="@dimen/_10sdp" android:layout_width="@dimen/_40sdp" android:layout_height="@dimen/_40sdp" android:src="@drawable/ic_phone" android:contentDescription="@string/todo" android:layout_marginStart="@dimen/_5sdp" android:layout_marginEnd="@dimen/_5sdp" app:tint="@color/white" />
+                            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <TextView android:textSize="@dimen/_13ssp" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contact" android:textAlignment="viewStart" />
+                                <TextView android:textSize="@dimen/_12ssp" android:textColor="@color/white" android:id="@id/tv_contact" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_1sdp" android:text="@string/app_name" android:textAlignment="viewStart" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <View android:background="#12ffffff" android:layout_width="fill_parent" android:layout_height="@dimen/_1sdp" android:layout_marginTop="@dimen/_5sdp" android:layout_marginBottom="@dimen/_5sdp" android:backgroundTint="@color/white" />
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <ImageView android:layout_gravity="center" android:padding="@dimen/_10sdp" android:layout_width="@dimen/_40sdp" android:layout_height="@dimen/_40sdp" android:src="@drawable/ic_information" android:contentDescription="@string/todo" android:layout_marginStart="@dimen/_5sdp" android:layout_marginEnd="@dimen/_5sdp" app:tint="@color/white" />
+                            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <TextView android:textSize="@dimen/_13ssp" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/version" android:textAlignment="viewStart" />
+                                <TextView android:textSize="@dimen/_12ssp" android:textColor="@color/white" android:id="@id/tv_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_1sdp" android:text="@string/app_name" android:textAlignment="viewStart" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:textStyle="bold" android:textColor="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_10sdp" android:text="@string/made_with_in" android:textAlignment="center" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+</LinearLayout>

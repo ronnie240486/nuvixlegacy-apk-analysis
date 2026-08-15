@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.journeyapps.barcodescanner.DecoratedBarcodeView android:layout_gravity="center" android:id="@id/barcode_scanner" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:layout_gravity="center" android:background="@drawable/borda_qr" android:layout_width="200.0dip" android:layout_height="200.0dip" />
+</FrameLayout>

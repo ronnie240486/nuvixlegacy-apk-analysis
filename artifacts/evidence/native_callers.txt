@@ -1,0 +1,2 @@
+/home/ubuntu/nuvixlegacy_analysis/decoded/jadx/sources/androidx/graphics/path/ConicConverter.java
+/home/ubuntu/nuvixlegacy_analysis/decoded/jadx/sources/androidx/graphics/path/PathIteratorPreApi34Impl.java

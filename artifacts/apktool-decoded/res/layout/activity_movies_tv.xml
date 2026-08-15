@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/theme_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.legacy.prime.Bacground.BackgroundView android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <ImageView android:id="@id/bg_anime" android:background="@drawable/bg_kid" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/_10sdp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/_5sdp" android:paddingEnd="@dimen/_15sdp">
+        <RelativeLayout android:id="@id/rl_top" android:layout_width="fill_parent" android:layout_height="@dimen/_20sdp">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView android:textSize="@dimen/_8sdp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TOTAL/" />
+                <TextView android:textSize="@dimen/_8sdp" android:textColor="@color/white" android:id="@id/totalseries" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:layout_marginStart="@dimen/_2sdp" />
+            </LinearLayout>
+            <ImageView android:id="@id/iv_back_page" android:background="@drawable/focused_img_selector" android:padding="@dimen/_5sdp" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp" android:src="@drawable/ic_player_back" android:scaleType="centerCrop" android:layout_centerVertical="true" android:contentDescription="@string/todo" android:layout_marginEnd="@dimen/_10sdp" android:layout_alignParentStart="true" app:tint="@color/white" />
+            <ImageView android:id="@id/iv_app_logo" android:padding="@dimen/_5sdp" android:visibility="gone" android:layout_width="@dimen/_30sdp" android:layout_height="@dimen/_30sdp" android:src="@drawable/list_channels" android:layout_centerVertical="true" android:contentDescription="@string/todo" android:layout_toEndOf="@id/iv_back_page" app:tint="@color/white" />
+            <TextView android:textSize="@dimen/_11ssp" android:textColor="@color/white" android:id="@id/tv_page_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_tv_home" android:layout_centerVertical="true" android:layout_marginStart="@dimen/_10sdp" android:layout_toEndOf="@id/iv_app_logo" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <LinearLayout android:orientation="horizontal" android:id="@id/iv_search" android:background="@drawable/focused_item_live_fragmente" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="@dimen/_23sdp">
+                    <ImageView android:layout_gravity="center" android:background="@drawable/focused_img_selector_color" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="@dimen/_15sdp" android:layout_height="@dimen/_15sdp" android:src="@drawable/ic_search" android:contentDescription="@string/todo" android:layout_marginStart="@dimen/_3sdp" app:tint="@color/white" />
+                    <TextView android:textSize="@dimen/_7ssp" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/txtbuscar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Buscar Filmes" android:layout_marginStart="@dimen/_10sdp" />
+                </LinearLayout>
+                <com.legacy.prime.custom.NoRepeatRecyclerView android:id="@id/rv_cat" android:paddingTop="@dimen/_10sdp" android:paddingBottom="@dimen/_20sdp" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/_5sdp" />
+            </LinearLayout>
+            <View android:background="@drawable/bg_line" android:layout_width="@dimen/_1sdp" android:layout_height="fill_parent" android:layout_marginEnd="@dimen/_5sdp" />
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.8">
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_mobile" android:paddingBottom="16.0dip" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:scrollbars="vertical" android:clipToPadding="false" android:layoutAnimation="@anim/layout_animation_from_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <com.legacy.prime.custom.LiveVerticalGridView android:id="@id/rv" android:paddingBottom="16.0dip" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:scrollbars="vertical" android:clipToPadding="false" android:layoutAnimation="@anim/layout_animation_from_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <FrameLayout android:id="@id/fl_empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="?actionBarSize" />
+                <FrameLayout android:gravity="center" android:id="@id/pb" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:layout_width="@dimen/_40sdp" android:layout_height="@dimen/_40sdp" android:layout_marginTop="@dimen/_10sdp" android:layout_centerInParent="true" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/myload" />
+                </FrameLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <com.airbnb.lottie.LottieAnimationView android:id="@id/loteranime" android:visibility="gone" android:layout_width="@dimen/_50sdp" android:layout_height="@dimen/_50sdp" android:layout_marginBottom="@dimen/_20sdp" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/_30sdp" android:layout_alignParentStart="true" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/naruto" />
+</RelativeLayout>

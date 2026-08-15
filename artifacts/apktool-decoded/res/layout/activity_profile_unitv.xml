@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/main" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="#ff161a26" android:layout_width="@dimen/_135sdp" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center" android:background="@drawable/icon_account_photo" android:layout_width="@dimen/_45sdp" android:layout_height="@dimen/_45sdp" android:layout_marginTop="@dimen/_25sdp" />
+            <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:text=" 238473322" />
+            <TextView android:textSize="@dimen/_7sdp" android:textColor="#ffa2a1a1" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:text="Conta Ativa" android:layout_marginStart="@dimen/_7sdp" android:layout_marginEnd="@dimen/_7sdp" />
+            <FrameLayout android:background="@drawable/rounded_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_23sdp" android:layout_marginStart="@dimen/_7sdp" android:layout_marginEnd="@dimen/_7sdp">
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_4sdp" android:layout_marginBottom="@dimen/_4sdp">
+                    <TextView android:textSize="@dimen/_7sdp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Senha:" />
+                    <TextView android:textSize="@dimen/_7sdp" android:textColor="#fffd9c00" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ja foi definida" android:layout_marginStart="@dimen/_2sdp" />
+                </LinearLayout>
+            </FrameLayout>
+            <FrameLayout android:background="@drawable/rounded_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp" android:layout_marginStart="@dimen/_7sdp" android:layout_marginEnd="@dimen/_7sdp">
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_4sdp" android:layout_marginBottom="@dimen/_4sdp">
+                    <TextView android:textSize="@dimen/_7sdp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Usuario:" />
+                    <TextView android:textSize="@dimen/_7sdp" android:textColor="#fffd9c00" android:id="@id/txtuser" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/_2sdp" />
+                </LinearLayout>
+            </FrameLayout>
+            <FrameLayout android:background="@drawable/rounded_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp" android:layout_marginStart="@dimen/_7sdp" android:layout_marginEnd="@dimen/_7sdp">
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_4sdp" android:layout_marginBottom="@dimen/_4sdp">
+                    <TextView android:textSize="@dimen/_7sdp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Celular:" />
+                    <TextView android:textSize="@dimen/_7sdp" android:textColor="#fffd9c00" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nao vinculado" android:layout_marginStart="@dimen/_2sdp" />
+                </LinearLayout>
+            </FrameLayout>
+            <LinearLayout android:gravity="center" android:id="@id/entrar" android:background="@drawable/rounded_background_profile" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/_18sdp" android:layout_marginTop="@dimen/_20sdp" android:layout_marginStart="@dimen/_10sdp" android:layout_marginEnd="@dimen/_10sdp">
+                <TextView android:textSize="@dimen/_7sdp" android:textColor="#fff2f2f2" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Entrar com outras contas" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/deslogar" android:background="@drawable/rounded_background_profile" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="@dimen/_18sdp" android:layout_marginTop="@dimen/_20sdp" android:layout_marginStart="@dimen/_10sdp" android:layout_marginEnd="@dimen/_10sdp">
+                <TextView android:textSize="@dimen/_7sdp" android:textColor="#fff2f2f2" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Deslogar" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@color/bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ScrollView android:scrollbars="none" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/_20sdp" android:fillViewport="true" android:paddingStart="@dimen/_13sdp" android:paddingEnd="@dimen/_13sdp">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp">
+                    <ImageView android:layout_width="fill_parent" android:layout_height="@dimen/_110sdp" android:scaleType="fitCenter" />
+                    <HorizontalScrollView android:focusable="false" android:focusableInTouchMode="false" android:scrollbars="none" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp">
+                            <RelativeLayout android:id="@id/logarmobile" android:background="@drawable/filmes_acivity" android:padding="@dimen/_1sdp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="@dimen/_64sdp" android:layout_height="@dimen/_55sdp">
+                                <ImageView android:background="@drawable/vod_bg_open_qr_code" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                                <ImageView android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_30sdp" android:layout_centerInParent="true" />
+                                <TextView android:textSize="@dimen/_7sdp" android:textColor="@color/white" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_3sdp" android:text="Logar no celular" android:layout_alignParentBottom="true" />
+                            </RelativeLayout>
+                            <RelativeLayout android:id="@id/more" android:background="@drawable/filmes_acivity" android:padding="@dimen/_1sdp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="@dimen/_64sdp" android:layout_height="@dimen/_55sdp" android:layout_marginStart="@dimen/_5sdp" android:layout_marginEnd="1.0dip">
+                                <ImageView android:background="@drawable/vod_bg_redemption_center" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                                <ImageView android:background="@drawable/icon_free_more" android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp" android:layout_centerInParent="true" />
+                                <TextView android:textSize="@dimen/_7sdp" android:textColor="@color/white" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_3sdp" android:text="Mais" android:layout_alignParentBottom="true" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/_10sdp" android:layout_marginBottom="@dimen/_20sdp">
+                        <TextView android:textSize="@dimen/_11sdp" android:textColor="#ffd9d8d8" android:id="@id/txtusados" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Funcoes mais usadas" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp" android:layout_below="@id/txtusados">
+                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <RelativeLayout android:id="@id/configreproducao" android:background="@drawable/filmes_acivity" android:padding="@dimen/_2sdp" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="@dimen/_55sdp" android:layout_weight="1.0">
+                                    <View android:background="#2effffff" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                                    <ImageView android:background="@drawable/icon_function_play_setting" android:layout_width="@dimen/_23sdp" android:layout_height="@dimen/_20sdp" android:layout_centerInParent="true" />
+                                    <TextView android:textSize="@dimen/_7sdp" android:textColor="@color/white" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_2sdp" android:text="Configuracoes Gerais" android:maxLines="1" android:layout_alignParentBottom="true" />
+                                </RelativeLayout>
+                                <RelativeLayout android:id="@id/controllparental" android:background="@drawable/filmes_acivity" android:padding="@dimen/_2sdp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:layout_height="@dimen/_55sdp" android:layout_weight="1.0" android:layout_marginStart="@dimen/_3sdp">
+                                    <View android:background="#2effffff" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                                    <ImageView android:background="@drawable/icon_function_lock" android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp" android:layout_centerInParent="true" />
+                                    <TextView android:textSize="@dimen/_7sdp" android:textColor="@color/white" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_2sdp" android:text="Definir Controle Parental" android:maxLines="1" android:layout_alignParentBottom="true" />
+                                </RelativeLayout>
+                                <RelativeLayout android:id="@id/limparcache" android:background="@drawable/filmes_acivity" android:padding="@dimen/_2sdp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:layout_height="@dimen/_55sdp" android:layout_weight="1.0" android:layout_marginStart="@dimen/_3sdp">
+                                    <View android:background="#2effffff" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                                    <ImageView android:background="@drawable/icon_function_clean" android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp" android:layout_centerInParent="true" />
+                                    <TextView android:textSize="@dimen/_7sdp" android:textColor="@color/white" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_2sdp" android:text="Limpar Cache" android:maxLines="1" android:layout_alignParentBottom="true" />
+                                </RelativeLayout>
+                                <RelativeLayout android:id="@id/update" android:background="@drawable/filmes_acivity" android:padding="@dimen/_2sdp" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="@dimen/_55sdp" android:layout_weight="1.0" android:layout_marginStart="@dimen/_3sdp">
+                                    <View android:background="#2effffff" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                                    <ImageView android:background="@drawable/icon_function_upgrade" android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp" android:layout_centerInParent="true" />
+                                    <TextView android:textSize="@dimen/_7sdp" android:textColor="@color/white" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_2sdp" android:text="Atualizar Versao" android:maxLines="1" android:layout_alignParentBottom="true" />
+                                </RelativeLayout>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp">
+                                <RelativeLayout android:id="@id/sobre" android:background="@drawable/filmes_acivity" android:padding="@dimen/_2sdp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:layout_height="@dimen/_55sdp" android:layout_weight="1.0">
+                                    <View android:background="#2effffff" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                                    <ImageView android:background="@drawable/icon_function_about" android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp" android:layout_centerInParent="true" />
+                                    <TextView android:textSize="@dimen/_7sdp" android:textColor="@color/white" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_2sdp" android:text="Sobre nos" android:maxLines="1" android:layout_alignParentBottom="true" />
+                                </RelativeLayout>
+                                <RelativeLayout android:id="@id/adultocontrole" android:background="@drawable/filmes_acivity" android:padding="@dimen/_2sdp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:layout_height="@dimen/_55sdp" android:layout_weight="1.0" android:layout_marginStart="@dimen/_3sdp">
+                                    <View android:background="#2effffff" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                                    <ImageView android:background="@drawable/icon_function_cr_switch_close" android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp" android:layout_centerInParent="true" />
+                                    <TextView android:textSize="@dimen/_7sdp" android:textColor="@color/white" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_2sdp" android:text="Conteudo Adulto" android:maxLines="1" android:layout_alignParentBottom="true" />
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

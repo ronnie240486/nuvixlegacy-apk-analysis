@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/TransparentDialog"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/focused_dialog" android:padding="@dimen/_10sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/_9sdp" android:textColor="#ffdbdbdb" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Menu de Configuracoes" />
+        <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center" android:id="@id/rv" android:paddingBottom="@dimen/_5sdp" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" />
+        <View android:background="#ffdbdbdb" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/_5sdp" />
+        <TextView android:textSize="@dimen/_9sdp" android:textColor="#ffdbdbdb" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_3sdp" android:text="Informacoes da Conta" />
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="@dimen/_130sdp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp">
+            <TextView android:textSize="@dimen/_8sdp" android:textColor="#ffa6a5a5" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ID da Conta:" />
+            <TextView android:textSize="@dimen/_8sdp" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/user" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/_10sdp" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="@dimen/_130sdp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_2sdp">
+            <TextView android:textSize="@dimen/_8sdp" android:textColor="#ffa6a5a5" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Data de Validade:" />
+            <TextView android:textSize="@dimen/_8sdp" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/_10sdp" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="@dimen/_130sdp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_2sdp">
+            <TextView android:textSize="@dimen/_8sdp" android:textColor="#ffa6a5a5" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mac:" />
+            <TextView android:textSize="@dimen/_8sdp" android:textColor="#ffffeb3b" android:layout_gravity="center" android:id="@id/idmac" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/_10sdp" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="@dimen/_130sdp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_2sdp">
+            <TextView android:textSize="@dimen/_8sdp" android:textColor="#ffa6a5a5" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Versao:" />
+            <TextView android:textSize="@dimen/_8sdp" android:textColor="#ffffeb3b" android:layout_gravity="center" android:id="@id/idversion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/_10sdp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

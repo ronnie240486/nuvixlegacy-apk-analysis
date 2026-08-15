@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/_30sdp" android:layout_margin="@dimen/_2sdp" android:layout_marginTop="@dimen/_5sdp" android:layout_marginBottom="@dimen/_5sdp" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="#18000000" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/fd_movie_card" android:background="@drawable/focused_item_live_fragmente" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/_2sdp" android:baselineAligned="false">
+        <TextView android:textSize="@dimen/_9ssp" android:textStyle="bold" android:textColor="#ffefefef" android:layout_gravity="center" android:id="@id/tv_number" android:layout_width="@dimen/_16sdp" android:layout_height="wrap_content" android:text="0" android:maxLines="1" android:lineSpacingMultiplier="0.9" android:layout_marginStart="@dimen/_3sdp" />
+        <ImageView android:layout_gravity="center" android:id="@id/iv_movie" android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp" android:scaleType="centerInside" android:adjustViewBounds="true" android:layout_marginStart="@dimen/_5sdp" app:hv_corner_radius="@dimen/_2sdp" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/_5sdp">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/_9ssp" android:textStyle="bold" android:textColor="#ffefefef" android:id="@id/tv_movie_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/app_name" android:maxLines="1" android:lineSpacingMultiplier="0.9" android:layout_marginStart="@dimen/_5sdp" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/_6ssp" android:textColor="@color/white" android:id="@id/txtepg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_card_star" android:background="@drawable/bg_star" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_margin="@dimen/_5sdp" android:paddingStart="@dimen/_2sdp" android:paddingEnd="@dimen/_2sdp">
+            <ImageView android:layout_width="@dimen/_11sdp" android:layout_height="@dimen/_11sdp" android:src="@drawable/ic_star_border" android:contentDescription="@string/todo" />
+            <TextView android:textSize="@dimen/_8ssp" android:textColor="@color/white" android:id="@id/tv_movie_rating" android:paddingBottom="@dimen/_1sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" android:layout_marginEnd="@dimen/_2sdp" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center" android:layout_width="@dimen/_9sdp" android:layout_height="@dimen/_9sdp" android:src="@drawable/live_channel_back" android:contentDescription="@string/todo" android:layout_marginEnd="@dimen/_5sdp" />
+    </LinearLayout>
+</RelativeLayout>

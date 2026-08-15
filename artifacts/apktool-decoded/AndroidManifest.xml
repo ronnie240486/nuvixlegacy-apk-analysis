@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="36" android:compileSdkVersionCodename="16" package="nordicorework.com.br.nuvixlegacy" platformBuildVersionCode="36" platformBuildVersionName="16">
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"/>
+    <uses-feature android:name="android.software.leanback" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    <uses-feature android:name="android.hardware.screen.portrait" android:required="false"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:maxSdkVersion="32" android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:maxSdkVersion="29" android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.Ad_ID"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <permission android:name="nordicorework.com.br.nuvixlegacy.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="nordicorework.com.br.nuvixlegacy.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-feature android:name="android.hardware.screen.landscape" android:required="false"/>
+    <application android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:banner="@drawable/servebanner" android:extractNativeLibs="true" android:hardwareAccelerated="false" android:icon="@mipmap/ic_launcher" android:label="NUVIX LEGACY" android:largeHeap="true" android:name="com.legacy.prime.activity.MyApplication" android:requestLegacyExternalStorage="true" android:roundIcon="@mipmap/ic_launcher" android:supportsRtl="true" android:theme="@style/AppTheme.NoActionBar" android:usesCleartextTraffic="true">
+        <activity android:configChanges="keyboard|keyboardHidden|navigation" android:exported="true" android:name="com.legacy.prime.activity.LiveTvActivity1" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation" android:exported="true" android:name="com.diegodev.apidesportes.jogos.ActivityEsporte" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation" android:exported="true" android:name="com.legacy.prime.activity.player.PlayerSeries" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation" android:exported="true" android:name="com.legacy.prime.activity.ui.AtvActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation" android:exported="true" android:name="com.legacy.prime.activity.Welcome" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation" android:exported="true" android:name="com.legacy.prime.activity.Mobile.ProfileActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation" android:exported="true" android:name="com.legacy.prime.activity.player.PlayerMovies" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation" android:exported="true" android:name="com.legacy.prime.activity.Mobile.MobileActivity" android:screenOrientation="sensorLandscape" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation" android:exported="true" android:name="com.legacy.prime.activity.Mobile.QrScannerActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.legacy.prime.activity.player.YouTubePlayerActivity" android:screenOrientation="sensorLandscape" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation" android:exported="true" android:name="com.legacy.prime.activity.AddListMac" android:screenOrientation="sensorLandscape" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation" android:exported="true" android:name="com.legacy.prime.activity.Login.SignInActivity" android:screenOrientation="sensorLandscape" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation" android:exported="true" android:name="com.legacy.prime.activity.Login.SplashInicio" android:screenOrientation="sensorLandscape" android:theme="@style/AppTheme.NoActionBar"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation" android:exported="true" android:name="com.legacy.prime.activity.Login.ActivityMac" android:screenOrientation="landscape" android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="false" android:name="com.legacy.prime.activity.MovieActivityTv" android:screenOrientation="sensorLandscape" android:theme="@style/Theme.AppCompat.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="false" android:name="com.legacy.prime.activity.AnimeActivityTv" android:screenOrientation="sensorLandscape" android:theme="@style/Theme.AppCompat.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="false" android:name="com.legacy.prime.activity.SeriesActivityTv" android:screenOrientation="sensorLandscape" android:theme="@style/Theme.AppCompat.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="false" android:name="com.legacy.prime.activity.DetailsMovieActivity" android:screenOrientation="sensorLandscape" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="false" android:name="com.legacy.prime.activity.DetailsSeriesActivity" android:screenOrientation="sensorLandscape" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="false" android:name="com.legacy.prime.activity.setting.SettingFormatActivity" android:screenOrientation="sensorLandscape" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="false" android:name="com.legacy.prime.activity.setting.SettingTimeFormatActivity" android:screenOrientation="sensorLandscape" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="false" android:name="com.legacy.prime.activity.SearchActivity" android:screenOrientation="sensorLandscape" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.legacy.prime.activity.player.PlayerMovieActivity" android:screenOrientation="sensorLandscape" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.legacy.prime.activity.player.PlayerEpisodesActivity" android:screenOrientation="sensorLandscape" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <provider android:authorities="nordicorework.com.br.nuvixlegacy.provider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <meta-data android:name="android.permission.MANAGE_EXTERNAL_STORAGE" android:value="true"/>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <meta-data android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" android:value="GlideModule"/>
+        <provider android:authorities="nordicorework.com.br.nuvixlegacy.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <provider android:authorities="nordicorework.com.br.nuvixlegacy.com.squareup.picasso" android:exported="false" android:name="com.squareup.picasso.PicassoProvider"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <activity android:clearTaskOnLaunch="true" android:name="com.journeyapps.barcodescanner.CaptureActivity" android:screenOrientation="sensorLandscape" android:stateNotNeeded="true" android:theme="@style/zxing_CaptureTheme" android:windowSoftInputMode="stateAlwaysHidden"/>
+    </application>
+</manifest>

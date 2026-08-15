@@ -1,0 +1,302 @@
+## aapt badging
+package: name='nordicorework.com.br.nuvixlegacy' versionCode='9' versionName='2.5' platformBuildVersionName='16' platformBuildVersionCode='36' compileSdkVersion='36' compileSdkVersionCodename='16'
+sdkVersion:'23'
+targetSdkVersion:'34'
+uses-permission: name='android.permission.READ_PHONE_STATE'
+uses-permission: name='android.permission.INTERNET'
+uses-permission: name='android.permission.ACCESS_NETWORK_STATE'
+uses-permission: name='android.permission.ACCESS_WIFI_STATE'
+uses-permission: name='android.permission.READ_EXTERNAL_STORAGE' maxSdkVersion='32'
+uses-permission: name='android.permission.WRITE_EXTERNAL_STORAGE' maxSdkVersion='29'
+uses-permission: name='android.permission.READ_MEDIA_VIDEO'
+uses-permission: name='android.permission.READ_MEDIA_AUDIO'
+uses-permission: name='android.permission.POST_NOTIFICATIONS'
+uses-permission: name='android.permission.Ad_ID'
+uses-permission: name='android.permission.CAMERA'
+uses-permission: name='android.permission.FOREGROUND_SERVICE'
+uses-permission: name='android.permission.FOREGROUND_SERVICE_DATA_SYNC'
+uses-permission: name='android.permission.REQUEST_INSTALL_PACKAGES'
+uses-permission: name='nordicorework.com.br.nuvixlegacy.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION'
+application-label:'NUVIX LEGACY'
+application-label-af:'NUVIX LEGACY'
+application-label-am:'NUVIX LEGACY'
+application-label-ar:'NUVIX LEGACY'
+application-label-as:'NUVIX LEGACY'
+application-label-az:'NUVIX LEGACY'
+application-label-be:'NUVIX LEGACY'
+application-label-bg:'NUVIX LEGACY'
+application-label-bn:'NUVIX LEGACY'
+application-label-bs:'NUVIX LEGACY'
+application-label-ca:'NUVIX LEGACY'
+application-label-cs:'NUVIX LEGACY'
+application-label-da:'NUVIX LEGACY'
+application-label-de:'NUVIX LEGACY'
+application-label-el:'NUVIX LEGACY'
+application-label-en-AU:'NUVIX LEGACY'
+application-label-en-CA:'NUVIX LEGACY'
+application-label-en-GB:'NUVIX LEGACY'
+application-label-en-IN:'NUVIX LEGACY'
+application-label-en-XC:'NUVIX LEGACY'
+application-label-es:'NUVIX LEGACY'
+application-label-es-419:'NUVIX LEGACY'
+application-label-es-US:'NUVIX LEGACY'
+application-label-et:'NUVIX LEGACY'
+application-label-eu:'NUVIX LEGACY'
+application-label-fa:'NUVIX LEGACY'
+application-label-fi:'NUVIX LEGACY'
+application-label-fr:'NUVIX LEGACY'
+application-label-fr-CA:'NUVIX LEGACY'
+application-label-gl:'NUVIX LEGACY'
+application-label-gu:'NUVIX LEGACY'
+application-label-he:'NUVIX LEGACY'
+application-label-hi:'NUVIX LEGACY'
+application-label-hr:'NUVIX LEGACY'
+application-label-hu:'NUVIX LEGACY'
+application-label-hy:'NUVIX LEGACY'
+application-label-id:'NUVIX LEGACY'
+application-label-in:'NUVIX LEGACY'
+application-label-is:'NUVIX LEGACY'
+application-label-it:'NUVIX LEGACY'
+application-label-iw:'NUVIX LEGACY'
+application-label-ja:'NUVIX LEGACY'
+application-label-ka:'NUVIX LEGACY'
+application-label-kk:'NUVIX LEGACY'
+application-label-km:'NUVIX LEGACY'
+application-label-kn:'NUVIX LEGACY'
+application-label-ko:'NUVIX LEGACY'
+application-label-ky:'NUVIX LEGACY'
+application-label-lo:'NUVIX LEGACY'
+application-label-lt:'NUVIX LEGACY'
+application-label-lv:'NUVIX LEGACY'
+application-label-mk:'NUVIX LEGACY'
+application-label-ml:'NUVIX LEGACY'
+application-label-mn:'NUVIX LEGACY'
+application-label-mr:'NUVIX LEGACY'
+application-label-ms:'NUVIX LEGACY'
+application-label-my:'NUVIX LEGACY'
+application-label-nb:'NUVIX LEGACY'
+application-label-ne:'NUVIX LEGACY'
+application-label-nl:'NUVIX LEGACY'
+application-label-or:'NUVIX LEGACY'
+application-label-pa:'NUVIX LEGACY'
+application-label-pl:'NUVIX LEGACY'
+application-label-pt:'NUVIX LEGACY'
+application-label-pt-BR:'NUVIX LEGACY'
+application-label-pt-PT:'NUVIX LEGACY'
+application-label-ro:'NUVIX LEGACY'
+application-label-ru:'NUVIX LEGACY'
+application-label-si:'NUVIX LEGACY'
+application-label-sk:'NUVIX LEGACY'
+application-label-sl:'NUVIX LEGACY'
+application-label-sq:'NUVIX LEGACY'
+application-label-sr:'NUVIX LEGACY'
+application-label-sr-Latn:'NUVIX LEGACY'
+application-label-sv:'NUVIX LEGACY'
+application-label-sw:'NUVIX LEGACY'
+application-label-ta:'NUVIX LEGACY'
+application-label-te:'NUVIX LEGACY'
+application-label-th:'NUVIX LEGACY'
+application-label-tl:'NUVIX LEGACY'
+application-label-tr:'NUVIX LEGACY'
+application-label-uk:'NUVIX LEGACY'
+application-label-ur:'NUVIX LEGACY'
+application-label-uz:'NUVIX LEGACY'
+application-label-vi:'NUVIX LEGACY'
+application-label-zh-CN:'NUVIX LEGACY'
+application-label-zh-HK:'NUVIX LEGACY'
+application-label-zh-TW:'NUVIX LEGACY'
+application-label-zu:'NUVIX LEGACY'
+application-icon-120:'res/mipmap-mdpi/ic_launcher.png'
+application-icon-160:'res/mipmap-mdpi/ic_launcher.png'
+application-icon-240:'res/mipmap-hdpi/ic_launcher.png'
+application-icon-320:'res/mipmap-xhdpi/ic_launcher.png'
+application-icon-480:'res/mipmap-xxhdpi/ic_launcher.png'
+application-icon-640:'res/mipmap-xxxhdpi/ic_launcher.png'
+application-icon-65534:'res/mipmap-mdpi/ic_launcher.png'
+application: label='NUVIX LEGACY' icon='res/mipmap-mdpi/ic_launcher.png' banner='res/drawable/servebanner.png'
+uses-library-not-required:'org.apache.http.legacy'
+launchable-activity: name='com.legacy.prime.activity.Login.ActivityMac'  label='' icon=''
+leanback-launchable-activity: name='com.legacy.prime.activity.Login.ActivityMac'  label='' icon='' banner=''
+feature-group: label=''
+  uses-feature-not-required: name='android.hardware.camera'
+  uses-feature-not-required: name='android.hardware.camera.autofocus'
+  uses-feature-not-required: name='android.hardware.camera.flash'
+  uses-feature-not-required: name='android.hardware.camera.front'
+  uses-feature-not-required: name='android.hardware.screen.landscape'
+  uses-feature-not-required: name='android.hardware.screen.portrait'
+  uses-feature-not-required: name='android.hardware.touchscreen'
+  uses-feature-not-required: name='android.hardware.wifi'
+  uses-feature-not-required: name='android.software.leanback'
+main
+other-activities
+other-receivers
+other-services
+supports-screens: 'small' 'normal' 'large' 'xlarge'
+supports-any-density: 'true'
+locales: '--_--' 'af' 'am' 'ar' 'as' 'az' 'be' 'bg' 'bn' 'bs' 'ca' 'cs' 'da' 'de' 'el' 'en-AU' 'en-CA' 'en-GB' 'en-IN' 'en-XC' 'es' 'es-419' 'es-US' 'et' 'eu' 'fa' 'fi' 'fr' 'fr-CA' 'gl' 'gu' 'he' 'hi' 'hr' 'hu' 'hy' 'id' 'in' 'is' 'it' 'iw' 'ja' 'ka' 'kk' 'km' 'kn' 'ko' 'ky' 'lo' 'lt' 'lv' 'mk' 'ml' 'mn' 'mr' 'ms' 'my' 'nb' 'ne' 'nl' 'or' 'pa' 'pl' 'pt' 'pt-BR' 'pt-PT' 'ro' 'ru' 'si' 'sk' 'sl' 'sq' 'sr' 'sr-Latn' 'sv' 'sw' 'ta' 'te' 'th' 'tl' 'tr' 'uk' 'ur' 'uz' 'vi' 'zh-CN' 'zh-HK' 'zh-TW' 'zu'
+densities: '120' '160' '240' '320' '480' '640' '65534'
+native-code: 'arm64-v8a' 'armeabi-v7a' 'x86' 'x86_64'
+## aapt permissions
+package: nordicorework.com.br.nuvixlegacy
+uses-permission: name='android.permission.READ_PHONE_STATE'
+uses-permission: name='android.permission.INTERNET'
+uses-permission: name='android.permission.ACCESS_NETWORK_STATE'
+uses-permission: name='android.permission.ACCESS_WIFI_STATE'
+uses-permission: name='android.permission.READ_EXTERNAL_STORAGE' maxSdkVersion='32'
+uses-permission: name='android.permission.WRITE_EXTERNAL_STORAGE' maxSdkVersion='29'
+uses-permission: name='android.permission.READ_MEDIA_VIDEO'
+uses-permission: name='android.permission.READ_MEDIA_AUDIO'
+uses-permission: name='android.permission.POST_NOTIFICATIONS'
+uses-permission: name='android.permission.Ad_ID'
+uses-permission: name='android.permission.CAMERA'
+uses-permission: name='android.permission.FOREGROUND_SERVICE'
+uses-permission: name='android.permission.FOREGROUND_SERVICE_DATA_SYNC'
+uses-permission: name='android.permission.REQUEST_INSTALL_PACKAGES'
+permission: nordicorework.com.br.nuvixlegacy.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+uses-permission: name='nordicorework.com.br.nuvixlegacy.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION'
+## aapt configurations
+
+w600dp
+w1240dp
+h720dp
+sw330dp
+sw360dp
+sw390dp
+sw420dp
+sw450dp
+sw480dp
+sw510dp
+sw540dp
+sw570dp
+sw600dp
+sw630dp
+sw660dp
+sw690dp
+sw720dp
+sw750dp
+sw780dp
+sw1080dp
+watch
+night
+small
+large
+xlarge
+ldrtl
+v24
+v25
+v26
+v28
+v30
+v31
+v34
+port
+w360dp-port
+w400dp-port
+h320dp-port
+h550dp-port
+land
+w320dp-land
+w600dp-land
+h360dp-land
+h480dp-land
+ldpi
+mdpi
+ldrtl-mdpi
+hdpi
+ldrtl-hdpi
+xhdpi
+ldrtl-xhdpi
+xxhdpi
+ldrtl-xxhdpi
+xxxhdpi
+ldrtl-xxxhdpi
+anydpi
+anydpi-v24
+ca
+da
+fa
+ja
+ka
+pa
+ta
+nb
+id
+be
+de
+he
+ne
+te
+af
+bg
+th
+fi
+hi
+si
+vi
+kk
+mk
+sk
+uk
+el
+gl
+ml
+nl
+pl
+sl
+tl
+am
+km
+bn
+in
+kn
+mn
+ko
+lo
+ro
+sq
+ar
+fr
+hr
+mr
+or
+sr
+b+sr+Latn
+tr
+ur
+as
+bs
+cs
+es
+is
+ms
+et
+it
+lt
+pt
+eu
+gu
+hu
+ru
+zu
+lv
+sv
+iw
+sw
+hy
+ky
+my
+az
+uz
+es-r419
+en-rCA
+fr-rCA
+en-rGB
+en-rXC
+zh-rHK
+zh-rCN
+en-rIN
+pt-rBR
+es-rUS
+pt-rPT
+en-rAU
+zh-rTW

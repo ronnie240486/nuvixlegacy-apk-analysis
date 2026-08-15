@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/rl_cat"
+    android:background="@drawable/focused_item_live_fragmente"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="@dimen/_7ssp"
+        android:textColor="@color/white"
+        android:ellipsize="marquee"
+        android:id="@+id/tv_cat_tv"
+        android:paddingTop="@dimen/_7sdp"
+        android:paddingBottom="@dimen/_7sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:singleLine="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:textAlignment="textStart"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_10sdp"/>
+    <View
+        android:id="@+id/vw_cat_tv"
+        android:background="@color/color_select"
+        android:visibility="gone"
+        android:layout_width="@dimen/_2sdp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_cat_tv"
+        android:layout_alignParentTop="true"/>
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/theme_bg" android:background="@drawable/bg_dark" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_top" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="@dimen/_10sdp" android:layout_marginBottom="@dimen/_5sdp" android:layout_weight="0.3" android:layout_marginStart="@dimen/_15sdp" android:layout_marginEnd="@dimen/_15sdp">
+        <ImageView android:id="@id/iv_back_page" android:background="@drawable/focused_img_selector" android:padding="@dimen/_5sdp" android:focusable="true" android:focusableInTouchMode="false" android:layout_width="@dimen/_33sdp" android:layout_height="@dimen/_33sdp" android:src="@drawable/ic_player_back" android:scaleType="centerCrop" android:layout_centerVertical="true" android:contentDescription="@string/todo" android:layout_marginEnd="@dimen/_10sdp" android:layout_alignParentStart="true" app:tint="@color/white" />
+        <ImageView android:id="@id/iv_app_logo" android:padding="@dimen/_5sdp" android:layout_width="@dimen/_30sdp" android:layout_height="@dimen/_30sdp" android:src="@drawable/ic_radio" android:layout_centerVertical="true" android:contentDescription="@string/todo" android:layout_toEndOf="@id/iv_back_page" app:tint="@color/white" />
+        <TextView android:textSize="@dimen/_11ssp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/radio" android:layout_centerVertical="true" android:layout_marginStart="@dimen/_10sdp" android:layout_toEndOf="@id/iv_app_logo" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:baselineAligned="false" android:layout_weight="2.0">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv" android:paddingBottom="@dimen/_20sdp" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/rl_radio_player" android:layout_marginStart="@dimen/_15sdp" android:layout_marginEnd="@dimen/_15sdp" />
+        <FrameLayout android:id="@id/fl_empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="?actionBarSize" android:layout_marginStart="@dimen/_15sdp" android:layout_marginEnd="@dimen/_15sdp" />
+        <RelativeLayout android:id="@id/rl_radio_player" android:background="#59000000" android:layout_width="fill_parent" android:layout_height="@dimen/_46sdp" android:layout_alignParentBottom="true">
+            <View android:background="#ff191919" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <ImageView android:id="@id/iv_radio_logo" android:layout_width="@dimen/_30sdp" android:layout_height="@dimen/_30sdp" android:src="@drawable/logo" android:layout_centerVertical="true" android:layout_marginStart="@dimen/_15sdp" app:hv_corner_radius="@dimen/_3sdp" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginStart="@dimen/_10sdp" android:layout_toEndOf="@id/iv_radio_logo">
+                <TextView android:textColor="@color/white" android:id="@id/tv_radio_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" android:lines="1" />
+                <TextView android:textColor="@color/white" android:id="@id/tv_radio_cat_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" android:lines="1" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginEnd="@dimen/_15sdp" android:layout_alignParentEnd="true">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_min_previous" android:background="@drawable/focused_btn_player" android:padding="@dimen/_6sdp" android:focusable="true" android:focusableInTouchMode="false" android:layout_width="@dimen/_35sdp" android:layout_height="@dimen/_35sdp" android:src="@drawable/ic_skip_previous" android:contentDescription="@string/todo" app:tint="@color/white" />
+                <FrameLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center" android:id="@id/iv_min_play" android:background="@drawable/focused_btn_player" android:focusable="true" android:focusableInTouchMode="false" android:layout_width="@dimen/_35sdp" android:layout_height="@dimen/_35sdp" android:src="@drawable/ic_play" android:scaleType="center" android:contentDescription="@string/todo" app:tint="@color/white" />
+                    <ProgressBar android:layout_gravity="center" android:id="@id/pb_min" android:background="#ff020309" android:visibility="gone" android:layout_width="@dimen/_35sdp" android:layout_height="@dimen/_35sdp" />
+                </FrameLayout>
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_min_next" android:background="@drawable/focused_btn_player" android:padding="@dimen/_6sdp" android:focusable="true" android:focusableInTouchMode="false" android:layout_width="@dimen/_35sdp" android:layout_height="@dimen/_35sdp" android:src="@drawable/ic_skip_next" android:contentDescription="@string/todo" app:tint="@color/white" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

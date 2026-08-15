@@ -1,0 +1,232 @@
+Android
+r29-beta4
+14033849
+__cxa_finalize
+__cxa_atexit
+__register_atfork
+base64_decode
+_Znwm
+memset
+_ZNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE9push_backEc
+_ZdlPvm
+Java_com_legacy_prime_callback_na_ei
+Java_com_legacy_prime_callback_na_ou
+Java_com_legacy_prime_callback_na_getRealApkPath
+_ZNKSt6__ndk18ios_base6getlocEv
+_ZNSt6__ndk15ctypeIcE2idE
+_ZNKSt6__ndk16locale9use_facetERNS0_2idE
+_ZNSt6__ndk16localeD1Ev
+strlen
+memchr
+memcmp
+_ZTTNSt6__ndk114basic_ifstreamIcNS_11char_traitsIcEEEE
+_ZNSt6__ndk113basic_filebufIcNS_11char_traitsIcEEED1Ev
+_ZNSt6__ndk113basic_istreamIcNS_11char_traitsIcEEED2Ev
+_ZNSt6__ndk19basic_iosIcNS_11char_traitsIcEEED2Ev
+memmove
+_ZNSt6__ndk114basic_ifstreamIcNS_11char_traitsIcEEED1Ev
+__stack_chk_fail
+_ZTVNSt6__ndk114basic_ifstreamIcNS_11char_traitsIcEEEE
+_ZNSt6__ndk18ios_base4initEPv
+_ZNSt6__ndk113basic_filebufIcNS_11char_traitsIcEEEC1Ev
+_ZNSt6__ndk113basic_filebufIcNS_11char_traitsIcEEE4openEPKcj
+_ZNSt6__ndk18ios_base5clearEj
+_Z22extrairPacoteDoApkPathRKNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE
+memcpy
+Java_com_legacy_prime_callback_na_isValidApkPath
+Java_com_legacy_prime_callback_na_ae
+_ZNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6assignEPKc
+_ZNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6appendEPKc
+Java_com_legacy_prime_callback_na_ver
+_ZNSt6__ndk16vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS4_IS6_EEE16__init_with_sizeB8ne210000IPKS6_SB_EEvT_T0_m
+_ZNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEaSERKS5_
+Java_com_legacy_prime_callback_na_testTcp
+_ZNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6appendEPKcm
+gethostbyname
+socket
+__memcpy_chk
+connect
+__strlen_chk
+sendto
+recvfrom
+close
+strstr
+__android_log_print
+__vsnprintf_chk
+Java_com_legacy_prime_callback_na_txt
+__cxa_begin_catch
+_ZSt9terminatev
+__cxa_allocate_exception
+_ZTISt12length_error
+_ZNSt12length_errorD1Ev
+__cxa_throw
+__cxa_free_exception
+_ZNSt11logic_errorC2EPKc
+_ZTVSt12length_error
+_ZNSt6__ndk113basic_istreamIcNS_11char_traitsIcEEE6sentryC1ERS3_b
+__cxa_end_catch
+__cxa_rethrow
+_ZTISt12out_of_range
+_ZNSt12out_of_rangeD1Ev
+_ZTVSt12out_of_range
+_ZNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE25__init_copy_ctor_externalEPKcm
+__gxx_personality_v0
+fprintf
+fflush
+abort
+pthread_rwlock_wrlock
+pthread_rwlock_unlock
+malloc
+dl_iterate_phdr
+pthread_rwlock_rdlock
+__errno
+syscall
+fwrite
+libdl.so
+libc.so
+liblog.so
+libc++_shared.so
+libm.so
+libnative.so
+SObZ2g==
+libunwind: %s - %s
+DW_EH_PE_funcrel pointer encoding not supported
+/proc/self/maps
+/lspatch/
+base.apk
+Nenhuma resposta HTTP recebida
+XNlLm
+getSavedFloatRegister
+V7rT2mN9cF4jK5dL
+ZWx4L
+HEAD %s HTTP/1.1
+Host: %s
+ApplicationId: %s
+Connection: close
+libunwind: malformed DW_CFA_def_cfa DWARF unwind, reg too big
+200 OK
+libunwind: malformed DW_CFA_val_offset DWARF unwind, reg (%lu) out of range
+CIE version is not 1 or 3
+o foi poss
+vel criar socket
+NsaWNr
+_Unwind_Resume() can't return
+libunwind: malformed DW_CFA_def_cfa_sf DWARF unwind, reg too big
+Can't binary search on variable length encoded data.
+ydQ==
+getULEB128
+libunwind: malformed DW_CFA_offset_extended DWARF unwind, reg too big
+FDE has zero length
+1g5LT/nA==
+truncated uleb128 expression
+libunwind: unsupported .eh_frame_hdr version: %u at %lx
+YXBwcy
+HEAD %s HTTP/1.1
+Host: %s
+Connection: close
+YXBpLm
+unsupported arm64 register
+unsupported restore location for register
+getTableEntrySize
+qsy9g==
+5jeW1
+DNS falhou para %s
+truncated sleb128 expression
+DW_OP_piece not implemented
+/data/app/
+/krjx/g==
+dckOu26w
+evaluateExpression
+/data/data/
+/token1.json
+unwind_phase2
+malformed uleb128 expression
+unsupported restore location for float register
+YXBwc
+libunwind: malformed DW_CFA_register DWARF unwind, reg2 too big
+DW_EH_PE_aligned pointer encoding not supported
+getSavedRegister
+3fqeVS1q
+NATIVE_TCP
+getRegister
+FDE is really a CIE
+Y29tLmF0di52aXZhLmFwcA==
+GV2cy
+libunwind: malformed DW_CFA_expression DWARF unwind, reg too big
+9RLGKqFj
+libunwind: malformed DW_CFA_offset_extended_sf DWARF unwind, reg too big
+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
+/virtual/
+unknown pointer encoding
+getSLEB128
+DW_OP_deref_size with bad size
+/cache/
+77EmRRV
+during phase1 personality function said it would stop here, but now in phase2 it did not stop here
+libunwind: unsupported .eh_frame_hdr at %lx: need at least 4 bytes of data but only got %zd
+Zx1DLmjN
+5jb20=
+setRegister
+Falha na conex
+o a %s:%d
+libunwind: malformed DW_CFA_restore_extended DWARF unwind, reg too big
+DW_EH_PE_textrel pointer encoding not supported
+DWARF opcode not implemented
+TMpJBgQ==
+libunwind: malformed DW_CFA_val_expression DWARF unwind, reg too big
+vector
+unknown register
+X1yZ8u3pA0eB9s6Q
+DEsr+VYuB
+DW_EH_PE_datarel is invalid with a datarelBase of 0
+Unknown DWARF encoding for search table.
+basic_string
+libunwind: malformed DW_CFA_GNU_negative_offset_extended DWARF unwind, reg too big
+F+rLEkl
+libunwind: malformed DW_CFA_register DWARF unwind, reg too big
+libunwind: malformed DW_CFA_def_cfa_register DWARF unwind, reg too big
+SBhf06H
+nRvcA==
+_Unwind_Resume
+libunwind: malformed DW_CFA_undefined DWARF unwind, reg too big
+CIE ID is not zero
+bGWSgHT
+CIE start does not match
+xOqq58tK
+ZpcmViY
+Unknown
+YXR2Z
+libunwind: malformed DW_CFA_val_offset_sf DWARF unwind, reg too big
+getEncodedP
+DW_OP_fbreg not implemented
+y50b3A=
+libunwind: malformed DW_CFA_same_value DWARF unwind, reg too big
+zjxk	
+`1IzI
+@9`1Nz
+@9`1Nz
+Android (13989888, +pgo, +bolt, +lto, +mlgo, based on r563880c) clang version 21.0.0 (https://android.googlesource.com/toolchain/llvm-project 5e96669f06077099aa41290cdb4c5e6fa0f59349)
+Android (13989888, based on r563880c) clang version 21.0.0 (https://android.googlesource.com/toolchain/llvm-project 5e96669f06077099aa41290cdb4c5e6fa0f59349)
+Linker: LLD 21.0.0 (/mnt/disks/build-disk/src/googleplex-android/llvm-r563880-release/out/llvm-project/llvm 5e96669f06077099aa41290cdb4c5e6fa0f59349)
+.fini_array
+.text
+.comment
+.note.android.ident
+.got.plt
+.rela.plt
+.dynstr
+.eh_frame_hdr
+.gnu.version_r
+.data.rel.ro
+.rela.dyn
+.gnu.version
+.dynsym
+.gnu.hash
+.relro_padding
+.eh_frame
+.gcc_except_table
+.note.gnu.build-id
+.dynamic
+.shstrtab
+.rodata
+.data

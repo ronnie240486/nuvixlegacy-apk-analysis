@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="@dimen/_25sdp" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_dialog" android:padding="@dimen/_5sdp" android:layout_width="@dimen/_280sdp" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_1sdp">
+            <ImageView android:padding="@dimen/_5sdp" android:layout_width="@dimen/_35sdp" android:layout_height="@dimen/_35sdp" android:src="@drawable/ic_feedback" android:contentDescription="@string/todo" app:tint="@color/white" />
+            <TextView android:textSize="@dimen/_13ssp" android:textStyle="bold" android:textColor="@color/white" android:padding="@dimen/_9sdp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/feedback" android:layout_weight="1.0" />
+            <ImageView android:id="@id/iv_close" android:background="@drawable/focused_img_selector" android:padding="@dimen/_5sdp" android:focusable="true" android:focusableInTouchMode="false" android:layout_width="@dimen/_35sdp" android:layout_height="@dimen/_35sdp" android:src="@drawable/ic_close" android:contentDescription="@string/todo" app:tint="@color/white" />
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatEditText android:textSize="@dimen/_12ssp" android:textColor="@color/white" android:textColorHint="@color/white" android:gravity="top" android:id="@id/et_messages" android:background="@drawable/focused_ed_dialog" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp" android:hint="@string/please_describe_the_problem" android:maxLines="10" android:minLines="4" android:imeOptions="flagNoFullscreen" android:layout_marginStart="@dimen/_10sdp" android:layout_marginEnd="@dimen/_10sdp" />
+        <LinearLayout android:orientation="horizontal" android:padding="@dimen/_10sdp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/_13ssp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_cancel" android:background="@drawable/focused_btn_danger" android:focusable="true" android:focusableInTouchMode="false" android:layout_width="0.0dip" android:layout_height="@dimen/_30sdp" android:text="@string/cancel" android:layout_weight="1.0" android:layout_marginEnd="@dimen/_10sdp" />
+            <TextView android:textSize="@dimen/_13ssp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_submit" android:background="@drawable/focused_btn_primary" android:focusable="true" android:focusableInTouchMode="false" android:layout_width="0.0dip" android:layout_height="@dimen/_30sdp" android:text="@string/submit" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

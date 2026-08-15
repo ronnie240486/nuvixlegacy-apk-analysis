@@ -1,0 +1,256 @@
+Android
+r29-beta4
+14033849
+__cxa_finalize
+__cxa_atexit
+__register_atfork
+base64_decode
+_Znwj
+_ZNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE9push_backEc
+_ZdlPvj
+__cxa_end_cleanup
+__gxx_personality_v0
+Java_com_legacy_prime_callback_na_ei
+Java_com_legacy_prime_callback_na_ou
+Java_com_legacy_prime_callback_na_getRealApkPath
+_ZNKSt6__ndk18ios_base6getlocEv
+_ZNKSt6__ndk16locale9use_facetERNS0_2idE
+_ZNSt6__ndk16localeD1Ev
+strlen
+memchr
+memcmp
+_ZNSt6__ndk113basic_filebufIcNS_11char_traitsIcEEED1Ev
+_ZNSt6__ndk113basic_istreamIcNS_11char_traitsIcEEED2Ev
+_ZNSt6__ndk19basic_iosIcNS_11char_traitsIcEEED2Ev
+__stack_chk_fail
+_ZNSt6__ndk114basic_ifstreamIcNS_11char_traitsIcEEED1Ev
+__stack_chk_guard
+_ZNSt6__ndk15ctypeIcE2idE
+_ZTTNSt6__ndk114basic_ifstreamIcNS_11char_traitsIcEEEE
+_ZNSt6__ndk18ios_base4initEPv
+_ZNSt6__ndk113basic_filebufIcNS_11char_traitsIcEEEC1Ev
+_ZNSt6__ndk113basic_filebufIcNS_11char_traitsIcEEE4openEPKcj
+_ZNSt6__ndk18ios_base5clearEj
+_ZTVNSt6__ndk114basic_ifstreamIcNS_11char_traitsIcEEEE
+_Z22extrairPacoteDoApkPathRKNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE
+Java_com_legacy_prime_callback_na_isValidApkPath
+Java_com_legacy_prime_callback_na_ae
+_ZNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6assignEPKc
+_ZNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6appendEPKc
+Java_com_legacy_prime_callback_na_ver
+_ZNSt6__ndk16vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS4_IS6_EEE16__init_with_sizeB8ne210000IPKS6_SB_EEvT_T0_j
+_ZNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEaSERKS5_
+Java_com_legacy_prime_callback_na_testTcp
+_ZNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6appendEPKcj
+gethostbyname
+socket
+__memcpy_chk
+connect
+__strlen_chk
+sendto
+recvfrom
+close
+strstr
+__android_log_print
+__vsnprintf_chk
+Java_com_legacy_prime_callback_na_txt
+__cxa_begin_catch
+_ZSt9terminatev
+__cxa_allocate_exception
+__cxa_throw
+__cxa_free_exception
+_ZTISt12length_error
+_ZNSt12length_errorD1Ev
+_ZNSt11logic_errorC2EPKc
+_ZTVSt12length_error
+_ZNSt6__ndk113basic_istreamIcNS_11char_traitsIcEEE6sentryC1ERS3_b
+__cxa_end_catch
+__cxa_rethrow
+_ZTISt12out_of_range
+_ZNSt12out_of_rangeD1Ev
+_ZTVSt12out_of_range
+_ZNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE25__init_copy_ctor_externalEPKcj
+memcpy
+memmove
+memset
+libc.so
+liblog.so
+libc++_shared.so
+libm.so
+libdl.so
+libnative.so
+SObZ2g==
+/proc/self/maps
+/lspatch/
+base.apk
+Nenhuma resposta HTTP recebida
+XNlLm
+V7rT2mN9cF4jK5dL
+ZWx4L
+HEAD %s HTTP/1.1
+Host: %s
+ApplicationId: %s
+Connection: close
+200 OK
+o foi poss
+vel criar socket
+NsaWNr
+ydQ==
+1g5LT/nA==
+YXBwcy
+HEAD %s HTTP/1.1
+Host: %s
+Connection: close
+YXBpLm
+qsy9g==
+5jeW1
+DNS falhou para %s
+/krjx/g==
+dckOu26w
+/data/data/
+/token1.json
+YXBwc
+3fqeVS1q
+NATIVE_TCP
+GV2cy
+9RLGKqFj
+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
+/virtual/
+/cache/
+77EmRRV
+Zx1DLmjN
+5jb20=
+Falha na conex
+o a %s:%d
+TMpJBgQ==
+vector
+X1yZ8u3pA0eB9s6Q
+DEsr+VYuB
+basic_string
+F+rLEkl
+SBhf06H
+nRvcA==
+bGWSgHT
+xOqq58tK
+Unknown
+YXR2Z
+y50b3A=
+/data/app/
+Y29tLmF0di52aXZhLmFwcA==
+ZpcmViY
+$yD	h	h8
+QFHF	
+QFHF	
+"VIyD F
+FIyD	h	h
+2(FQFZF
+!P hP
+h(h `
+IxDyD	h	h
+I F2FyD
+PD|DI
+FoHxD
+DXD|DI
+FHF)F
+.IyD	h	h
+ D"L|DI
+0FAF"F
+	YF@F~D	
+NYF@F~D	
+L|D F
+NYF@F~D	
+NYF@F~D	
+rI0F"FyD
+PF)FBF
+OIyD	h	h
+	YF@F~D	
+PF)FBF
+HF1F"F
+2@F)F2F
+VIVJWKyDzD{DhF
+VIVJWKyDzD{DhF
+VIVJWKyDzD{DhF
+VIVJWKyDzD{DhF
+VIVJWKyDzD{DhF
+=IyD	h	h
+ FYF2F
+IyD	h	h
+HF1F"F
+2(FAF2F
+IyD(F
+IyD(F
+IyD(F
+IyD(F
+IyD(F
+IyD(F
+IyD(F
+IyD(F
+ZIyD	h	h
+xDyD	h	hG
+I(F"FyD
+!)UxD
+I(F"FyD
+!)UxD
+I(F"FyD
+!)UxD
+I(F"FyD
+H{DxD
+& F)F
+ F)F@
+tIuJyDzD
+rIrJyDzD
+qIqJyDzDP +F
+nInJyDzD
+FIyD	h	h
+IyD	h	h
+IyD	h	h
+(F!F2F
+2PFAFJF
+I(F"FyD
+!)UxD
+I(F"FyD
+!)UxD
+I(F"FyD
+!)UxD
+I(F"FyD
+& F)F
+ F)F@
+JyDzD
+JyDzD
+}I~JyDzDP +F
+rIsJyDzD
+FIyD	h	h
+JxDzD
+IyD	h
+FxDAF
+IyD	h	h
+JxDzD
+IyD	h
+F.HxD
+IyD	h	h
+Android (13989888, +pgo, +bolt, +lto, +mlgo, based on r563880c) clang version 21.0.0 (https://android.googlesource.com/toolchain/llvm-project 5e96669f06077099aa41290cdb4c5e6fa0f59349)
+Android (13989888, based on r563880c) clang version 21.0.0 (https://android.googlesource.com/toolchain/llvm-project 5e96669f06077099aa41290cdb4c5e6fa0f59349)
+Linker: LLD 21.0.0 (/mnt/disks/build-disk/src/googleplex-android/llvm-r563880-release/out/llvm-project/llvm 5e96669f06077099aa41290cdb4c5e6fa0f59349)
+aeabi
+C2.09
+.fini_array
+.ARM.exidx
+.text
+.comment
+.note.android.ident
+.got.plt
+.rel.plt
+.ARM.attributes
+.dynstr
+.gnu.version_r
+.data.rel.ro
+.rel.dyn
+.gnu.version
+.dynsym
+.gnu.hash
+.relro_padding
+.note.gnu.build-id
+.dynamic
+.ARM.extab
+.shstrtab
+.rodata

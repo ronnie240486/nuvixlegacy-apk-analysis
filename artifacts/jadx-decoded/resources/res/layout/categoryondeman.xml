@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginStart="@dimen/_2sdp">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/linearondeman"
+        android:background="@drawable/focused_home"
+        android:padding="@dimen/_5sdp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5">
+        <ImageView
+            android:id="@+id/lock"
+            android:background="@drawable/logo"
+            android:visibility="gone"
+            android:layout_width="@dimen/_13sdp"
+            android:layout_height="@dimen/_13sdp"
+            android:scaleType="fitXY"
+            android:layout_marginEnd="@dimen/_3sdp"/>
+        <TextView
+            android:textSize="@dimen/_7sdp"
+            android:textColor="#ffe1e1e1"
+            android:ellipsize="end"
+            android:layout_gravity="center"
+            android:id="@+id/ondemanname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FILMES: LANCAMENTOS 2024 "
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:singleLine="true"/>
+    </LinearLayout>
+</RelativeLayout>
