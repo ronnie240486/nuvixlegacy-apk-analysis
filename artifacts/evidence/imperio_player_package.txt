@@ -1,0 +1,12 @@
+# IMPÉRIOPLAYER 5.5.9
+
+Artefato recebido do usuário para armazenamento e manutenção no repositório.
+
+- Arquivo de origem recebido: `IMPÉRIOPLAYER5.5.9.apk`
+- Arquivo publicado: `artifacts/original/IMPÉRIOPLAYER5.5.9.apk`
+- Tamanho: 22.508.307 bytes
+- SHA-256: `45daa0efd343438d110d997f3928f2f6cc1e20b7e4e49ae1be08406a25d3afe9`
+- Tipo: Android Package (APK)
+- Status: armazenado; não executado nem modificado
+
+Este repositório contém o APK fornecido e os artefatos de análise do NUVIX LEGACY anterior. O APK não implica a existência do código-fonte original ou que o aplicativo tenha sido compilado neste ambiente.

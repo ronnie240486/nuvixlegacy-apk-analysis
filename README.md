@@ -40,6 +40,10 @@ A documentação completa, incluindo limitações e próximos passos para uma au
 
 O diretório `artifacts/apktool-decoded` contém manifesto, recursos e smali decodificados. O diretório `artifacts/jadx-decoded` contém o código Java recuperado e os recursos extraídos pelo JADX. O diretório `artifacts/evidence` concentra saídas textuais reproduzíveis: inventários, logs, permissões, endpoints, certificados, símbolos e strings. O APK original permanece em `artifacts/original` para comparação de hashes e reprocessamento.
 
+## APK adicional: IMPÉRIOPLAYER 5.5.9
+
+O arquivo `artifacts/original/IMPÉRIOPLAYER5.5.9.apk` foi adicionado ao repositório conforme fornecido pelo usuário. O registro de tamanho, hash SHA-256 e escopo pode ser consultado em [`artifacts/evidence/imperio_player_package.txt`](artifacts/evidence/imperio_player_package.txt). Este artefato foi armazenado sem execução ou modificação; o repositório não contém o código-fonte original desse APK, apenas o arquivo recebido e os artefatos de análise já existentes do NUVIX LEGACY.
+
 ## Uso responsável
 
 Os artefatos podem conter URLs, nomes de pacote, identificadores, estruturas de autenticação, material de assinatura pública e valores incorporados no cliente. Este repositório deve permanecer privado até que o responsável pelo aplicativo revise o conteúdo e remova ou proteja qualquer informação operacional. A análise não autoriza acesso a painéis, contas, servidores, listas ou conteúdo de terceiros.
