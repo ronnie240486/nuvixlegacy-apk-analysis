@@ -60,6 +60,15 @@ jobs:
           mkdir -p work/dex work/new work/jc work/d8 work/manifest src/com/legacy/prime/rencia
           cd work/dex && unzip -q "../../$APK" 'classes*.dex' && cd ../..
           (cd work/manifest && unzip -q "../../$APK" AndroidManifest.xml)
+          EXISTING_MODULE_DEX=""
+          for D in work/dex/classes*.dex; do
+            if strings "$D" | grep -q "RenciaBackend"; then EXISTING_MODULE_DEX="$D"; break; fi
+          done
+          if [ -n "$EXISTING_MODULE_DEX" ]; then
+            echo "Rencia existente encontrado em $EXISTING_MODULE_DEX; sera atualizado no proprio classes*.dex"
+          else
+            echo "Rencia existente nao encontrado; sera usado o modulo embutido"
+          fi
 
           cat > patch_infinitus.py <<'PYEOF'
           """Patches de smali do Infinitus 2.8.8 (rodam sobre a pasta gerada pelo baksmali do dex do painel).
@@ -744,7 +753,9 @@ jobs:
                   return copy, j
 
               if find_element("activity", GATE) is not None:
-                  raise SystemExit("Manifesto ja tem o RenciaGateActivity")
+                  open(dst, "wb").write(b)
+                  print("Manifesto ja tem o RenciaGateActivity; mantendo manifesto existente")
+                  return
               mac = find_element("activity", MAC_ACTIVITY)
               assert mac is not None, "ActivityMac nao encontrada no manifesto"
               svc = find_element("service", SERVICE_MODEL)
@@ -781,7 +792,10 @@ jobs:
               main(sys.argv[1], sys.argv[2])
           PYEOF
 
-          # modulo Rencia (o mesmo do Infinitus 2.8.8), embutido aqui para este arquivo ser o unico a subir
+          # modulo Rencia: reutiliza o que ja existe no Império Player; fallback para o modulo embutido.
+          if [ -n "$EXISTING_MODULE_DEX" ]; then
+            cp "$EXISTING_MODULE_DEX" work/module.dex
+          else
           base64 -d > work/module.dex <<'B64EOF'
           ZGV4CjAzNQCK++EGd10y1OPaD+XoIp6JvX76JQro1Ims/QAAcAAAAHhWNBIAAAAAAAAAANz8AADZ
           AwAAcAAAAJoAAADUDwAAyAAAADwSAABqAAAAnBsAANoBAADsHgAALAAAALwtAABwygAAPDMAAIqp
@@ -1925,6 +1939,7 @@ jobs:
           AAT5AAAAEAAAAQAAANz8AAA=
           B64EOF
           echo "3c0c0f9d7647749ee2abe91f593fd01b2919a4db38e0bd31c34de1971f2775c0  work/module.dex" | sha256sum -c -
+          fi
 
           # 1) smali do modulo: Railway primeiro, reserva Manus, __idle__, ordem do heartbeat, Assistindo
           : > work/applied.txt
@@ -1933,15 +1948,22 @@ jobs:
           # Mantem a identidade visual e o nome do IMPÉRIO PLAYER do APK de origem.
           sort -u work/applied.txt > work/applied_u.txt
           echo "Patches aplicados:"; cat work/applied_u.txt
-          for P in host_check reserva_manus painel painel_home rotas_magnus comandos_magnus heartbeat heartbeat_comando sync_imediato observador; do
+          REQUIRED_PATCHES="host_check reserva_manus painel painel_home rotas_magnus comandos_magnus heartbeat sync_imediato observador"
+          if [ -z "$EXISTING_MODULE_DEX" ]; then REQUIRED_PATCHES="$REQUIRED_PATCHES heartbeat_comando"; fi
+          for P in $REQUIRED_PATCHES; do
             grep -qx "$P" work/applied_u.txt || { echo "ERRO: patch '$P' nao foi aplicado"; exit 1; }
           done
           VER=$(head -c 7 work/module.dex | tail -c 3)
           case "$VER" in 037) API=24 ;; 038) API=26 ;; 039) API=28 ;; *) API=15 ;; esac
           echo "modulo: dex versao $VER -> smali --api $API"
           NDEX=$(ls work/dex/classes*.dex | wc -l)
-          MODDEX="classes$((NDEX + 1)).dex"
-          WATCHDEX="classes$((NDEX + 2)).dex"
+          if [ -n "$EXISTING_MODULE_DEX" ]; then
+            MODDEX=$(basename "$EXISTING_MODULE_DEX")
+            WATCHDEX="classes$((NDEX + 1)).dex"
+          else
+            MODDEX="classes$((NDEX + 1)).dex"
+            WATCHDEX="classes$((NDEX + 2)).dex"
+          fi
           smali a --api "$API" work/smali_module -o "work/new/$MODDEX"
 
           # 2) codigo novo (Assistindo): compila e vira um dex a parte
@@ -1959,6 +1981,7 @@ jobs:
           # 4) monta o APK
           cp "$APK" work/unsigned.apk
           zip -q -d work/unsigned.apk 'META-INF/*' || true
+          if [ -n "$EXISTING_MODULE_DEX" ]; then zip -q -d work/unsigned.apk "$MODDEX"; fi
           (cd work/new && zip -q ../unsigned.apk AndroidManifest.xml "$MODDEX" "$WATCHDEX")
           "$BT/zipalign" -p -f 4 work/unsigned.apk work/aligned.apk
           OUT="ImperioPlayer-Magnus-Railway.apk"
