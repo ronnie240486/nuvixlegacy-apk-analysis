@@ -348,22 +348,8 @@ jobs:
                   command_marker = 'const-string v1, "' + NEW + '/api/v5/remote-commands?mac="'
               if cspan and command_marker in command_body and 'const-string v1, "&app=magnus"' not in command_body:
                   command_body = command_body.replace(
-                      """    invoke-virtual {p0}, Ljava/lang/String;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-static {p0}, Lcom/legacy/prime/rencia/RenciaBackend;->get(Ljava/lang/String;)Lorg/json/JSONObject;""",
-                      """    const-string v1, "&app=magnus"
-
-    invoke-virtual {p0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Ljava/lang/String;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-static {p0}, Lcom/legacy/prime/rencia/RenciaBackend;->get(Ljava/lang/String;)Lorg/json/JSONObject;""",
+                      "    invoke-virtual {p0}, Ljava/lang/String;->toString()Ljava/lang/String;\n\n    move-result-object p0\n\n    invoke-static {p0}, Lcom/legacy/prime/rencia/RenciaBackend;->get(Ljava/lang/String;)Lorg/json/JSONObject;",
+                      "    const-string v1, \"&app=magnus\"\n\n    invoke-virtual {p0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;\n\n    move-result-object p0\n\n    invoke-virtual {p0}, Ljava/lang/String;->toString()Ljava/lang/String;\n\n    move-result-object p0\n\n    invoke-static {p0}, Lcom/legacy/prime/rencia/RenciaBackend;->get(Ljava/lang/String;)Lorg/json/JSONObject;",
                       1)
                   t = t[:cs] + command_body + t[ce:]
                   report.add("comandos_magnus")
