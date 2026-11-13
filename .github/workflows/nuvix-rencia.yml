@@ -349,6 +349,15 @@ jobs:
               t = t.replace(NEW + "/api/v5/ultra-config?mac=", NEW + "/api/v5/apps/magnus/config?mac=")
               if t != route_before:
                   report.add("rotas_magnus")
+              # O painel Magnus pode devolver playlist_url no objeto raiz.
+              lspan = method_span(t, r"\.method public static applyLists\(Landroid/content/Context;Lorg/json/JSONObject;\)I")
+              if lspan:
+                  ls, le = lspan
+                  list_body = t[ls:le]
+                  list_body_new = list_body.replace('const-string v3, "url"', 'const-string v3, "playlist_url"', 1)
+                  if list_body_new != list_body:
+                      t = t[:ls] + list_body_new + t[le:]
+                      report.add("lista_magnus")
               # A rota de comandos exige o identificador do app.
               cspan = method_span(t, r"\.method public static commands\(Ljava/lang/String;\)Lorg/json/JSONObject;")
               if cspan:
@@ -1948,7 +1957,7 @@ jobs:
           # Mantem a identidade visual e o nome do IMPÉRIO PLAYER do APK de origem.
           sort -u work/applied.txt > work/applied_u.txt
           echo "Patches aplicados:"; cat work/applied_u.txt
-          REQUIRED_PATCHES="host_check reserva_manus painel painel_home rotas_magnus comandos_magnus heartbeat sync_imediato observador"
+          REQUIRED_PATCHES="host_check reserva_manus painel painel_home rotas_magnus lista_magnus comandos_magnus heartbeat sync_imediato observador"
           if [ -z "$EXISTING_MODULE_DEX" ]; then REQUIRED_PATCHES="$REQUIRED_PATCHES heartbeat_comando"; fi
           for P in $REQUIRED_PATCHES; do
             grep -qx "$P" work/applied_u.txt || { echo "ERRO: patch '$P' nao foi aplicado"; exit 1; }
