@@ -1,10 +1,10 @@
-name: Nuvix Legacy - painel Rencia (Railway), Assistindo e avisos
+name: Império Play - painel Magnus (Railway), Assistindo e avisos
 
-# Coloca o painel Rencia no Nuvix Legacy SEM reconstruir o app inteiro:
+# Coloca o painel Magnus no IMPÉRIOPLAYER 5.5.9 SEM reconstruir o app inteiro:
 #  - o app passa a abrir pela tela do Rencia (valida o MAC no painel, baixa a lista do cliente e entra no app)
 #  - painel: Railway primeiro; o Manus fica so como reserva se o Railway nao responder
 #  - heartbeat com "__idle__", "Assistindo" (filme/serie/TV ao vivo), avisos, vencimento e comandos do painel
-#  - usa o mesmo modulo Rencia que ja roda no Infinitus (mesma base de codigo com.legacy.prime)
+#  - usa o mesmo modulo Rencia que ja roda no Império Play (mesma base de codigo com.legacy.prime)
 # Roda sozinho quando este arquivo e enviado. O APK sai em Actions > (execucao) > Artifacts.
 on:
   push:
@@ -15,7 +15,7 @@ on:
       apk:
         description: "APK de origem (caminho dentro do repositorio)"
         required: true
-        default: "artifacts/original/NUVIXLEGACY.apk"
+        default: "artifacts/original/IMPÉRIOPLAYER5.5.9.apk"
 
 jobs:
   patch:
@@ -25,7 +25,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           sparse-checkout: |
-            ${{ inputs.apk || 'artifacts/original/NUVIXLEGACY.apk' }}
+            ${{ inputs.apk || 'artifacts/original/IMPÉRIOPLAYER5.5.9.apk' }}
           sparse-checkout-cone-mode: false
 
       - name: Instalar ferramentas (smali/baksmali e zip)
@@ -51,7 +51,7 @@ jobs:
 
       - name: Corrigir o APK
         env:
-          APK: ${{ inputs.apk || 'artifacts/original/NUVIXLEGACY.apk' }}
+          APK: ${{ inputs.apk || 'artifacts/original/IMPÉRIOPLAYER5.5.9.apk' }}
         run: |
           exec > >(tee /tmp/step.log) 2>&1
           trap 'rc=$?; sleep 1; [ $rc -eq 0 ] || echo "::error title=Falhou::$(tail -n 14 /tmp/step.log | cut -c1-260 | sed "s/%/%25/g" | paste -sd "|" -)"' EXIT
@@ -80,6 +80,8 @@ jobs:
           .method private static shouldFallback(Ljava/lang/Throwable;)Z
               .locals 2
 
+              # Railway e a fonte primaria. So reserva para falha de rede,
+              # resposta vazia/JSON invalido ou HTTP 5xx; nunca para HTTP 4xx.
               invoke-virtual {p0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
               move-result-object v0
@@ -332,7 +334,40 @@ jobs:
               if OLD in t:
                   t = t.replace(OLD, NEW)
                   report.add("painel")
-              # 4) heartbeat: sentinela __idle__
+              # 4) Rotas Magnus: config unico por MAC e comandos identificados pelo app.
+              route_before = t
+              t = t.replace(NEW + "/api/guim.php?mac=", NEW + "/api/v5/apps/magnus/config?mac=")
+              t = t.replace(NEW + "/api/v5/ultra-config?mac=", NEW + "/api/v5/apps/magnus/config?mac=")
+              if t != route_before:
+                  report.add("rotas_magnus")
+              # A rota de comandos exige o identificador do app.
+              cspan = method_span(t, r"\.method public static commands\(Ljava/lang/String;\)Lorg/json/JSONObject;")
+              if cspan:
+                  cs, ce = cspan
+                  command_body = t[cs:ce]
+                  command_marker = 'const-string v1, "' + NEW + '/api/v5/remote-commands?mac="'
+              if cspan and command_marker in command_body and 'const-string v1, "&app=magnus"' not in command_body:
+                  command_body = command_body.replace(
+                      """    invoke-virtual {p0}, Ljava/lang/String;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-static {p0}, Lcom/legacy/prime/rencia/RenciaBackend;->get(Ljava/lang/String;)Lorg/json/JSONObject;""",
+                      """    const-string v1, "&app=magnus"
+
+    invoke-virtual {p0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/String;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-static {p0}, Lcom/legacy/prime/rencia/RenciaBackend;->get(Ljava/lang/String;)Lorg/json/JSONObject;""",
+                      1)
+                  t = t[:cs] + command_body + t[ce:]
+                  report.add("comandos_magnus")
+              # 5) heartbeat: sentinela __idle__
               span = method_span(t, r"\.method public static heartbeat\(Ljava/lang/String;Ljava/lang/String;\)Lorg/json/JSONObject;")
               if span:
                   s, e = span
@@ -1909,23 +1944,10 @@ jobs:
           : > work/applied.txt
           baksmali d work/module.dex -o work/smali_module
           python3 patch_infinitus.py work/smali_module work/applied.txt
-          # nome na tela de validacao
-          python3 - <<'PYEOF'
-          import os
-          n = 0
-          for dp, _, fs in os.walk("work/smali_module"):
-              for f in fs:
-                  p = os.path.join(dp, f)
-                  t = open(p, encoding="utf-8").read()
-                  u = t.replace('"IMP\\u00c9RIO PLAYER"', '"NUVIX LEGACY"').replace('"IMPÉRIO PLAYER"', '"NUVIX LEGACY"')
-                  if u != t:
-                      open(p, "w", encoding="utf-8").write(u); n += 1
-          print("textos trocados:", n)
-          assert n >= 1, "nome do app nao encontrado no modulo"
-          PYEOF
+          # Mantem a identidade visual e o nome do IMPÉRIO PLAYER do APK de origem.
           sort -u work/applied.txt > work/applied_u.txt
           echo "Patches aplicados:"; cat work/applied_u.txt
-          for P in host_check reserva_manus painel painel_home heartbeat heartbeat_comando sync_imediato observador; do
+          for P in host_check reserva_manus painel painel_home rotas_magnus comandos_magnus heartbeat heartbeat_comando sync_imediato observador; do
             grep -qx "$P" work/applied_u.txt || { echo "ERRO: patch '$P' nao foi aplicado"; exit 1; }
           done
           VER=$(head -c 7 work/module.dex | tail -c 3)
@@ -1953,7 +1975,7 @@ jobs:
           zip -q -d work/unsigned.apk 'META-INF/*' || true
           (cd work/new && zip -q ../unsigned.apk AndroidManifest.xml "$MODDEX" "$WATCHDEX")
           "$BT/zipalign" -p -f 4 work/unsigned.apk work/aligned.apk
-          OUT="Nuvix-Rencia.apk"
+          OUT="ImperioPlayer-Magnus-Railway.apk"
           "$BT/apksigner" sign --ks nuvix.keystore --ks-key-alias nuvix \
             --ks-pass pass:nuvix-test-key --key-pass pass:nuvix-test-key \
             --out "$OUT" work/aligned.apk
@@ -1966,7 +1988,7 @@ jobs:
 
           python3 - <<'PYEOF'
           import zipfile
-          z = zipfile.ZipFile("Nuvix-Rencia.apk")
+          z = zipfile.ZipFile("ImperioPlayer-Magnus-Railway.apk")
           names = z.namelist()
           dexnames = [n for n in names if n.startswith("classes") and n.endswith(".dex")]
           dex = b"".join(z.read(n) for n in dexnames)
@@ -1975,16 +1997,18 @@ jobs:
               raw = z.read(n)
               if b"renciaapp.manus.space" in raw:
                   assert b"Lcom/legacy/prime/rencia/RenciaBackend;" in raw and b"shouldFallback" in raw, "Manus fora da reserva em " + n
+          assert b"/api/v5/apps/magnus/config?mac=" in dex, "Rota de config Magnus ausente"
+          assert b"&app=magnus" in dex, "Identificador app=magnus ausente nos comandos"
           assert b"__idle__" in dex, "Sentinela __idle__ ausente"
           assert any(b"Lcom/legacy/prime/rencia/InfinitusWatch;" in z.read(n) and b"infinitus_sync_now" in z.read(n) for n in dexnames), "Assistindo ausente"
           assert b"Lcom/legacy/prime/rencia/RenciaGateActivity;" in dex, "Tela do Rencia ausente"
           assert "resources.arsc" in names
-          print("OK: tela inicial do Rencia, Railway primeiro, Manus de reserva, __idle__ e Assistindo presentes")
+          print("OK: Império Play com Magnus, Railway primeiro, Manus de reserva elegivel, __idle__ e Assistindo presentes")
           PYEOF
           sha256sum "$OUT"
 
       - name: Guardar o APK ajustado
         uses: actions/upload-artifact@v4
         with:
-          name: Nuvix-Rencia
-          path: Nuvix-Rencia.apk
+          name: ImperioPlayer-Magnus-Railway
+          path: ImperioPlayer-Magnus-Railway.apk
